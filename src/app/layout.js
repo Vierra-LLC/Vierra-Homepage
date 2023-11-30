@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Vierra | Home",
   description:
-    "Greetings, my name is Alex and I am a multi-skilled entrepreneur. I am dedicated to providing the highest quality products and services. I strive to stay at the forefront of my industry, constantly seeking out new opportunities and advancements. Please visit my links to learn more about me, my shop, and my current projects.",
+    "Vierra is a versatile company dedicated to delivering comprehensive software solutions tailored for medical practices. Specifically designed to cater to small business owners, Vierra offers a seamless package encompassing CRM and marketing/sales tools for these practices. Beyond that, Vierra's software suite extends to cover an array of functionalities, including 3D modeling, task management, insurance administration, customer interactions, patient history, and financial management, which includes integration with QuickBooks. Our software is accessible on both mobile and desktop platforms, with an online web portal connecting to an e-commerce store for medical products and materials. Additionally, Vierra operates on a subscription-based model, allowing us to work business-by-business, offering individualized support for each client's company growth aspirations. Say goodbye to fragmented divisions—Vierra presents an all-in-one software and consulting solution to streamline operations, from accounting to sales, and more.",
   author: "Alexersion",
   p: {
     domain_verify: "b5b96b6ba822cdff32f61e172488f254",
@@ -26,7 +26,7 @@ export const metadata = {
     url: "vierradev.com",
     title: "Vierra | Home",
     description:
-      "Greetings, my name is Alex and I am a multi-skilled entrepreneur. I am dedicated to providing the highest quality products and services. I strive to stay at the forefront of my industry, constantly seeking out new opportunities and advancements. Please visit my links to learn more about me, my shop, and my current projects.",
+      "Vierra is a versatile company dedicated to delivering comprehensive software solutions tailored for medical practices. Specifically designed to cater to small business owners, Vierra offers a seamless package encompassing CRM and marketing/sales tools for these practices. Beyond that, Vierra's software suite extends to cover an array of functionalities, including 3D modeling, task management, insurance administration, customer interactions, patient history, and financial management, which includes integration with QuickBooks. Our software is accessible on both mobile and desktop platforms, with an online web portal connecting to an e-commerce store for medical products and materials. Additionally, Vierra operates on a subscription-based model, allowing us to work business-by-business, offering individualized support for each client's company growth aspirations. Say goodbye to fragmented divisions—Vierra presents an all-in-one software and consulting solution to streamline operations, from accounting to sales, and more.",
     images: [
       "https://firebasestorage.googleapis.com/v0/b/picture-host.appspot.com/o/meta-banner.png?alt=media&token=72c91394-aa3f-4104-92bd-6ef961be964c",
     ],

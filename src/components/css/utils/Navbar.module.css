@@ -1,5 +1,5 @@
 .Container {
-  width: 70%;
+  width: clamp(500px, 90%, 1400px);
   height: 70px;
   display: flex;
   align-items: center;
@@ -55,6 +55,14 @@
   gap: 5px;
   font-weight: 500;
   font-size: 12px;
+}
+
+.LoginCircle {
+  border-radius: 999px;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  margin-top: 1px;
 }
 
 .LoginWord {

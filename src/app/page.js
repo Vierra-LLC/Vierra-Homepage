@@ -1,4 +1,5 @@
 import Hero from "@/components/elements/Hero";
+import Footer from "@/components/utils/Footer";
 import Navbar from "@/components/utils/Navbar";
 
 function page() {
@@ -11,6 +12,7 @@ function page() {
     <div style={block}>
       <Navbar />
       <Hero />
+      <Footer />
     </div>
   );
 }

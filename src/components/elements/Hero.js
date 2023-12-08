@@ -1,7 +1,7 @@
-import React from "react";
+import styles from "../css/elements/Hero.module.css";
 
 function Hero() {
-  return <div>Coming Soon!!!</div>;
+  return <div className={styles.Container}>Coming Soon!!!</div>;
 }
 
 export default Hero;

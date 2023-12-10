@@ -31,8 +31,48 @@ function Footer() {
               their operations and achieve their goals.
             </span>
           </div>
-          <div className={styles.FooterSection}></div>
-          <div className={styles.FooterSection}></div>
+          <div className={styles.FooterSection}>
+            <div className={styles.SectionChild}>
+              <div className={styles.SectionTitle}>Support</div>
+              <div className={styles.SectionButton}>Help Centre</div>
+              <div className={styles.SectionButton}>FAQ</div>
+              <div className={styles.SectionButton}>Contact</div>
+              <div className={styles.SectionButton}>Press</div>
+              <div className={styles.SectionButton}>Status</div>
+            </div>
+            <div className={styles.SectionChild}>
+              <div className={styles.SectionTitle}>Legal</div>
+              <div className={styles.SectionButton}>Legal Notice</div>
+              <div className={styles.SectionButton}>Privacy Policy</div>
+              <div className={styles.SectionButton}>Terms of Use</div>
+            </div>
+            <div className={styles.SectionChild}>
+              <div className={styles.SectionTitle}>Social</div>
+              <div className={styles.SectionButton}>Instagram</div>
+              <div className={styles.SectionButton}>Twitter</div>
+              <div className={styles.SectionButton}>Facebook</div>
+              <div className={styles.SectionButton}>LinkedIn</div>
+              <div className={styles.SectionButton}>Github</div>
+            </div>
+          </div>
+          <div className={styles.FooterSection}>
+            <div className={styles.SectionChild}>
+              <div className={styles.SectionTitle}>Company</div>
+              <div className={styles.SectionButton}>About</div>
+              <div className={styles.SectionButton}>Leadership</div>
+              <div className={styles.SectionButton}>Blog</div>
+              <div className={styles.SectionButton}>Careers</div>
+              <div className={styles.SectionButton}>Community</div>
+              <div className={styles.SectionButton}>Referal Program</div>
+            </div>
+            <div className={styles.SectionChild}>
+              <div className={styles.SectionTitle}>Product</div>
+              <div className={styles.SectionButton}>Overview</div>
+              <div className={styles.SectionButton}>Features</div>
+              <div className={styles.SectionButton}>Pricing</div>
+              <div className={styles.SectionButton}>Documentation</div>
+            </div>
+          </div>
           <div className={styles.FooterCopy}>
             &copy; 2023 Vierra, Inc. All rights reserved
           </div>

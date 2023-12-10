@@ -1,0 +1,41 @@
+.Container {
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.MainTitle {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 45px;
+  align-items: center;
+}
+
+.MainTitlePic {
+  width: 120px;
+  height: 42px;
+  border: 1px solid black;
+}
+
+.Context {
+  width: 500px;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.Slider {
+  width: 100%;
+  height: max-content;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-evenly;
+}

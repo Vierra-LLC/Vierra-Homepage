@@ -1,4 +1,5 @@
 import Hero from "@/components/elements/Hero";
+import Testimonials from "@/components/elements/Testimonials";
 import Footer from "@/components/utils/Footer";
 import Navbar from "@/components/utils/Navbar";
 
@@ -12,6 +13,7 @@ function page() {
     <div style={block}>
       <Navbar />
       <Hero />
+      <Testimonials />
       <Footer />
     </div>
   );

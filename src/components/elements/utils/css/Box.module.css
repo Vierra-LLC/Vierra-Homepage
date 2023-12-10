@@ -1,0 +1,34 @@
+.Container {
+  height: 100%;
+  width: 400px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 8px;
+  overflow: visible;
+}
+
+.Container > * {
+  margin: 0px 30px;
+}
+
+.NameContainer {
+  display: flex;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.Name {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.Position {
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-left: 1px;
+}
+
+.Context {
+  font-size: 13px;
+  line-height: 19px;
+}

@@ -4,6 +4,7 @@
   align-items: center;
   margin-top: 50px;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .EndCredits {
@@ -63,15 +64,16 @@
 }
 
 .Footer {
-  height: 300px;
+  height: max-content;
   width: 90%;
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .FooterRight {
-  width: 27%;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -80,4 +82,36 @@
 .FooterIntro {
   font-size: 25px;
   line-height: 35px;
+}
+
+.FooterSection {
+  display: flex;
+}
+
+.SectionChild {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+}
+
+.SectionButton {
+  width: max-content;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.SectionTitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.FooterCopy {
+  font-size: 12px;
+}
+
+.FooterLeft {
+  border: 1px solid black;
+  flex-grow: 1;
 }

@@ -6,8 +6,7 @@ function Footer() {
     <div className={styles.Container}>
       <div className={styles.EndCredits}>
         <div className={global.SectionTitle}>
-          <div className={styles.SectionTitleUp}>We invite you to try our</div>{" "}
-          <br />
+          <div className={global.SectionTitle}>We invite you to try our</div>{" "}
           <span className={global.HighLightRed}>
             innovative solutions tools.
           </span>
@@ -25,7 +24,7 @@ function Footer() {
         <div className={styles.FooterLeft}></div>
         <div className={styles.FooterRight}>
           <div className={styles.FooterIntro}>
-            Whether it's software, hardware, or a combination of both,{" "}
+            Whether it&apos;s software, hardware, or a combination of both,{" "}
             <span className={global.Bolded}>
               our aim is to provide solutions that help our clients streamline
               their operations and achieve their goals.

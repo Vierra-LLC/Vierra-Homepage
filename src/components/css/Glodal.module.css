@@ -1,6 +1,6 @@
 .HighLightPurple {
-  background: #7a12d0;
-  background: linear-gradient(to bottom, #7a12d0 0%, #9110c2 100%);
+  background: #7c12cf;
+  background: linear-gradient(to bottom, #7c12cf 0%, #a10eb8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -27,11 +27,17 @@
   font-weight: 600;
   font-size: 45px;
   text-align: center;
-  line-height: 38px;
+  line-height: 50px;
+  width: 650px;
 }
 
 .Context {
   width: 500px;
   line-height: 24px;
   font-size: 14px;
+}
+
+.TinyTitle {
+  font-size: 14px;
+  font-weight: 500;
 }

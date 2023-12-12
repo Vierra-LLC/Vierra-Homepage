@@ -34,7 +34,7 @@ function Testimonials() {
           <div className={styles.MainTitlePic}></div>
           <div className={global.HighLightSemiPurple}>Testimonials</div>
         </div>
-        <div className={styles.Context}>
+        <div className={global.Context}>
           Our clients have praised our solution tools, describing them as
           incredibly useful and user-friendly. They appreciate the efficiency
           and accuracy they bring to their work, and the ability to save them

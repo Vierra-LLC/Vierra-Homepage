@@ -8,7 +8,10 @@ function Testimonialbox({ name, position, context }) {
           <div className={styles.Name}>{name}</div>
           <div className={styles.Position}>{position}</div>
         </div>
-        <div className={styles.Rating}>5</div>
+        <div className={styles.Rating}>
+          <div>5</div>
+          <div>*</div>
+        </div>
       </div>
       <div className={styles.Context}>{context}</div>
     </div>

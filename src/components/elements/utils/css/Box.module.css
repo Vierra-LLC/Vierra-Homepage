@@ -1,19 +1,20 @@
 .Container {
   height: 100%;
   width: 400px;
-  border: 1px solid rgb(197, 197, 197);
+  border: 1px solid rgba(128, 128, 128, 0.15);
   border-radius: 8px;
   overflow: visible;
 }
 
 .Container > * {
-  margin: 0px 30px;
+  margin: 0px 15px;
 }
 
 .NameContainer {
   display: flex;
-  margin: 0 auto;
+  margin: 30px auto;
   width: max-content;
+  gap: 15px;
 }
 
 .Name {
@@ -23,12 +24,23 @@
 
 .Position {
   font-weight: 500;
-  font-size: 13px;
-  margin-top: 5px;
+  font-size: 12px;
+  margin-top: 2px;
   margin-left: 1px;
+  color: rgb(87, 87, 87);
 }
 
 .Context {
-  font-size: 13px;
-  line-height: 19px;
+  font-size: 11.5px;
+  margin-bottom: 30px;
+  line-height: 21px;
+}
+
+.Rating {
+  display: flex;
+  gap: 5px;
+  border-left: 2px solid rgba(128, 128, 128, 0.15);
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 25px;
 }

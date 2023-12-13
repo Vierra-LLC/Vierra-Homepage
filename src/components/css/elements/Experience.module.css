@@ -37,8 +37,7 @@
   width: 80vw;
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  gap: 100px;
 }
 
 .LeftSide {
@@ -112,7 +111,7 @@
   justify-content: center;
   gap: 10px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -134,6 +133,150 @@
 
 .RightSide {
   height: 550px;
+  width: 60%;
+}
+
+.RightButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.RightButtons > * {
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ButtonProgress {
+  background-color: #ece0f8;
+  margin-left: 20px;
+}
+
+.ButtonManagement {
+  background-color: #f3c8c9;
+}
+
+.ButtonReport {
+  background-color: #def3c9;
+}
+
+.ButtonMeeting {
+  background-color: #d8ddf6;
+}
+
+.ButtonMeeting {
+  margin-right: 20px;
+}
+
+.PicturesContainer {
+  border: 1px solid rgba(128, 128, 128, 0.236);
+  border-radius: 8px;
+  align-items: center;
+  float: right;
+  margin-right: 50px;
+  margin-top: 80px;
+  display: flex;
+  gap: 10px;
+}
+
+.Picture:first-child {
+  margin-left: 10px;
+}
+
+.Picture:last-child {
+  margin-right: 10px;
+}
+
+.PicturesContainer > * {
+  border-radius: 8px;
+  width: 65px;
+  height: 65px;
+  border: 1px solid rgba(128, 128, 128, 0.236);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.AnalysisContainer {
+  background-color: #c050a7;
+  height: 50px;
+  width: 350px;
+  margin-top: 275px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+  margin-left: 100px;
+}
+
+.AnalysisLeft,
+.AnalysisRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.AnalysisClock {
   border: 1px solid black;
-  flex-grow: 1;
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+}
+
+.AnalysisTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.AnalysisUpperText {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+
+.AnalysisDateDate {
+  font-size: 8px;
+}
+
+.AnalysisRightPicture {
+  border: 1px solid black;
+  width: 33px;
+  height: 33px;
+  border-radius: 4px;
+}
+
+.AnalysisRightDots {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.AnalysisRightDot {
+  background-color: white;
+  border-radius: 9999px;
+  height: 2px;
+  width: 2px;
+}
+
+.UserFlowContainer {
+  background-color: #6d73ff;
+  height: 50px;
+  width: 350px;
+  margin-top: 75px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
 }

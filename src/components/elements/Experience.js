@@ -46,7 +46,68 @@ function Experience() {
             </div>
           </div>
         </div>
-        <div className={styles.RightSide}></div>
+        <div className={styles.RightSide}>
+          <div className={styles.RightButtons}>
+            <div className={styles.ButtonProgress}>Progress Tracker</div>
+            <div className={styles.ButtonManagement}>Task Management</div>
+            <div className={styles.ButtonReport}>Generate Report</div>
+            <div className={styles.ButtonMeeting}>Schedule Meeting</div>
+          </div>
+          <div className={styles.PicturesContainer}>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}></div>
+            <div className={styles.Picture}>+</div>
+          </div>
+          <div className={styles.AnalysisContainer}>
+            <div className={styles.AnalysisLeft}>
+              <div className={styles.AnalysisClock}></div>
+              <div className={styles.AnalysisTextContainer}>
+                <div className={styles.AnalysisUpperText}>
+                  Competitive Analysis
+                </div>
+                <div className={styles.AnalysisDate}>
+                  <div className={styles.AnalysisDateCalendar}></div>
+                  <div className={styles.AnalysisDateDate}>Feb 12 - 26</div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.AnalysisRight}>
+              <div className={styles.AnalysisRightPicture}></div>
+              <div className={styles.AnalysisRightDots}>
+                <div className={styles.AnalysisRightDot}></div>
+                <div className={styles.AnalysisRightDot}></div>
+                <div className={styles.AnalysisRightDot}></div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.UserFlowContainer}>
+            <div className={styles.AnalysisLeft}>
+              <div className={styles.AnalysisClock}></div>
+              <div className={styles.AnalysisTextContainer}>
+                <div className={styles.AnalysisUpperText}>
+                  User Flow & Personna&apos;s
+                </div>
+                <div className={styles.AnalysisDate}>
+                  <div className={styles.AnalysisDateCalendar}></div>
+                  <div className={styles.AnalysisDateDate}>Feb 12 - 26</div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.AnalysisRight}>
+              <div className={styles.AnalysisRightPicture}></div>
+              <div className={styles.AnalysisRightPicture}></div>
+              <div className={styles.AnalysisRightDots}>
+                <div className={styles.AnalysisRightDot}></div>
+                <div className={styles.AnalysisRightDot}></div>
+                <div className={styles.AnalysisRightDot}></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

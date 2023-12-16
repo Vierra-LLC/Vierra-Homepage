@@ -1,0 +1,50 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Helped,
+.Gained {
+  text-align: center;
+  margin: 20px auto;
+  height: 120px;
+  width: 500px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 10px;
+}
+
+.SilvedHighlight {
+  background: #aaa3b0;
+  background: linear-gradient(to right, #aaa3b0 0%, #f7f5f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.Helped {
+  background-color: #190929;
+}
+
+.Gained {
+  background-color: #2b0c33;
+  margin-top: -5px;
+}
+
+.HelpedWord {
+  font-size: 13.5px;
+}

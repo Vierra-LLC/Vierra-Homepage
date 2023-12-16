@@ -1,9 +1,11 @@
+import Circles from "@/components/test/Circles";
 import styles from "../css/elements/Hero.module.css";
 import global from "../css/Glodal.module.css";
 
 function Hero() {
   return (
     <div className={styles.Container}>
+      <Circles />
       <div className={styles.HeroTitle}>
         Realtime <span className={global.HighLightPurple}>solution</span>{" "}
         <span className={global.HighLightSemiPurple}>tools</span> for your

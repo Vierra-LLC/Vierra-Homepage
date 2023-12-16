@@ -1,0 +1,80 @@
+.Container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MainTitle {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+  width: 400px;
+  letter-spacing: 0.02rem;
+}
+
+.LeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Button {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.RightSide {
+  height: 500px;
+  width: 700px;
+  border-radius: 21px;
+  background-color: #00000080;
+  overflow: hidden;
+  color: white;
+}
+
+.RightSide > * {
+  padding: 45px;
+}
+
+.RightSideButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.RightSideButtons > * {
+  border: 2px solid white;
+  border-radius: 16px;
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 12px;
+  font-size: 400;
+  width: 125px;
+}
+
+.RightSideContext {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  margin-top: -30px;
+}
+
+.RightSideSlider {
+  width: 500px;
+  height: max-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+  height: 50px;
+}
+
+.RightSideSlider > * {
+  width: 25%;
+  height: 3px;
+  background-color: #cca3f3;
+}

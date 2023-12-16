@@ -1,3 +1,5 @@
+"use client";
+
 import Business from "@/components/homepage/elements/Business";
 import Case from "@/components/homepage/elements/Case";
 import Experience from "@/components/homepage/elements/Experience";
@@ -8,18 +10,20 @@ import Testimonials from "@/components/homepage/elements/Testimonials";
 import Footer from "@/components/homepage/utils/Footer";
 import Navbar from "@/components/homepage/utils/Navbar";
 import styles from "./page.module.css";
+import { useElementSize } from "@mantine/hooks";
 
 function page() {
+  const { ref, width } = useElementSize();
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} ref={ref}>
       <Navbar />
-      <Hero />
-      <Business />
-      <Growth />
-      <Software />
-      <Experience />
-      <Case />
-      <Testimonials />
+      <Hero width={width} />
+      <Business width={width} />
+      <Growth width={width} />
+      <Software width={width} />
+      <Experience width={width} />
+      <Case width={width} />
+      <Testimonials width={width} />
       <Footer />
     </div>
   );

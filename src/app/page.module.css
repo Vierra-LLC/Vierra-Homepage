@@ -8,5 +8,5 @@
 }
 
 .Container > * {
-  z-index: 9;
+  z-index: 999;
 }

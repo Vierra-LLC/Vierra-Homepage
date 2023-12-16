@@ -1,4 +1,4 @@
-import Circles from "@/components/test/Circles";
+import Circles from "@/components/homepage/utils/Circles";
 
 function page() {
   return <Circles />;

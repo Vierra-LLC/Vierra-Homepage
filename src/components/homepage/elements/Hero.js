@@ -1,8 +1,62 @@
 import Circles from "@/components/homepage/utils/Circles";
 import styles from "../css/elements/Hero.module.css";
 import global from "../css/Glodal.module.css";
+import Image from "next/image";
+import FirstPic from "./img/Firstpic.png";
+import SecondPic from "./img/SecondPic.png";
+import Thirdpic from "./img/Thirdpic.png";
+import Fourthpic from "./img/Fourthpic.png";
+import Fifthpic from "./img/Fifthpic.png";
+import Doctor from "./logos/Doctor.png";
+import Glossy from "./logos/Glossy.png";
+import Cloud from "./logos/Cloud.png";
+import Hues from "./logos/Hues.png";
+import Scale from "./logos/Scale.png";
+import Invert from "./logos/Invert.png";
 
 function Hero({ width }) {
+  const list = [
+    {
+      name: "CRM",
+      image: "test",
+    },
+    {
+      name: "Sales",
+      image: "test",
+    },
+    {
+      name: "Marketing",
+      image: "test",
+    },
+    {
+      name: "Accounting",
+      image: "test",
+    },
+    {
+      name: "Outreach",
+      image: "test",
+    },
+  ];
+  const logos = [
+    {
+      image: Doctor,
+    },
+    {
+      image: Glossy,
+    },
+    {
+      image: Cloud,
+    },
+    {
+      image: Hues,
+    },
+    {
+      image: Scale,
+    },
+    {
+      image: Invert,
+    },
+  ];
   return (
     <div className={styles.Container}>
       <Circles
@@ -35,8 +89,24 @@ function Hero({ width }) {
         <div className={styles.HeroButtonCircle}></div>
         <div className={styles.HeroButtonText}>TRY DEMO</div>
       </div>
-      <div className={styles.SchemasContainer}></div>
-      <div className={styles.LogosContainer}></div>
+      <div className={styles.SchemasContainer}>
+        {list.map((container, i) => (
+          <div className={styles.SchemaBox} key={i}>
+            <div className={styles.SchemaDot}>
+              <div className={styles.Dot}></div>
+            </div>
+            <div className={styles.SchemaTitle}>{container.name}</div>
+            <div className={styles.SchemaPicture}>{container.image}</div>
+          </div>
+        ))}
+      </div>
+      <div className={styles.LogosContainer}>
+        {logos.map((logos, i) => (
+          <div key={i}>
+            <Image src={logos.image} height={75} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

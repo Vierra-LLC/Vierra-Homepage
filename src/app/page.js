@@ -11,22 +11,28 @@ import Footer from "@/components/homepage/utils/Footer";
 import Navbar from "@/components/homepage/utils/Navbar";
 import styles from "./page.module.css";
 import { useElementSize } from "@mantine/hooks";
+<<<<<<< HEAD
 import useStore from "@/components/homepage/state/Store";
 import { useEffect } from "react";
 
 function page() {
   const { ref, width } = useElementSize();
 
+=======
+
+function page() {
+  const { ref, width } = useElementSize();
+>>>>>>> a174037fe213b2d3d8a1b9f7d58c8ff07887e772
   return (
     <div className={styles.Container} ref={ref}>
       <Navbar />
-      <Hero />
-      <Business />
-      <Growth />
-      <Software />
-      <Experience />
-      <Case />
-      <Testimonials />
+      <Hero width={width} />
+      <Business width={width} />
+      <Growth width={width} />
+      <Software width={width} />
+      <Experience width={width} />
+      <Case width={width} />
+      <Testimonials width={width} />
       <Footer />
     </div>
   );

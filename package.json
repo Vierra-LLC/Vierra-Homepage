@@ -13,8 +13,12 @@
     "@mantine/hooks": "^7.3.2",
     "next": "14.0.3",
     "react": "^18",
+<<<<<<< HEAD
     "react-dom": "^18",
     "zustand": "^4.4.7"
+=======
+    "react-dom": "^18"
+>>>>>>> a174037fe213b2d3d8a1b9f7d58c8ff07887e772
   },
   "devDependencies": {
     "eslint": "^8",

@@ -1,11 +1,16 @@
-import Circles from "@/components/test/Circles";
+import Circles from "@/components/homepage/utils/Circles";
 import styles from "../css/elements/Hero.module.css";
 import global from "../css/Glodal.module.css";
 
-function Hero() {
+function Hero({ width }) {
   return (
     <div className={styles.Container}>
-      <Circles />
+      <Circles right={!width ? "-100vw" : "-35vw"} color={"purple"} />
+      {/* <Circles
+        top={"-100px"}
+        left={!width ? "-100vw" : "-35vw"}
+        color={"not"}
+      /> */}
       <div className={styles.HeroTitle}>
         Realtime <span className={global.HighLightPurple}>solution</span>{" "}
         <span className={global.HighLightSemiPurple}>tools</span> for your

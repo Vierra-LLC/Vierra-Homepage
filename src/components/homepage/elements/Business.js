@@ -1,9 +1,11 @@
 import styles from "../css/elements/Business.module.css";
 import global from "../css/Glodal.module.css";
+import Circles from "../utils/Circles";
 
-function Business() {
+function Business({ width }) {
   return (
     <div className={styles.Container}>
+      <Circles top={"500px"} left={!width ? "-100vw" : "-35vw"} color={"not"} />
       <div className={styles.LeftSide}>
         <div className={global.TinyTitle}>
           <span className={global.HighLightRed}>growth</span>

@@ -1,3 +1,5 @@
+"use client";
+
 import Business from "@/components/homepage/elements/Business";
 import Case from "@/components/homepage/elements/Case";
 import Experience from "@/components/homepage/elements/Experience";
@@ -8,10 +10,15 @@ import Testimonials from "@/components/homepage/elements/Testimonials";
 import Footer from "@/components/homepage/utils/Footer";
 import Navbar from "@/components/homepage/utils/Navbar";
 import styles from "./page.module.css";
+import { useElementSize } from "@mantine/hooks";
+import useStore from "@/components/homepage/state/Store";
+import { useEffect } from "react";
 
 function page() {
+  const { ref, width } = useElementSize();
+
   return (
-    <div className={styles.Container}>
+    <div className={styles.Container} ref={ref}>
       <Navbar />
       <Hero />
       <Business />

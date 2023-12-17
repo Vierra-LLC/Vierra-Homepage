@@ -5,12 +5,20 @@ import global from "../css/Glodal.module.css";
 function Hero({ width }) {
   return (
     <div className={styles.Container}>
-      <Circles right={!width ? "-100vw" : "-35vw"} color={"purple"} />
-      {/* <Circles
+      <Circles
+        right={
+          !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+        }
+        color={true}
         top={"-100px"}
-        left={!width ? "-100vw" : "-35vw"}
-        color={"not"}
-      /> */}
+        width={width}
+      />
+      <Circles
+        left={!width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`}
+        color={false}
+        top={"50px"}
+        width={width}
+      />
       <div className={styles.HeroTitle}>
         Realtime <span className={global.HighLightPurple}>solution</span>{" "}
         <span className={global.HighLightSemiPurple}>tools</span> for your
@@ -27,6 +35,8 @@ function Hero({ width }) {
         <div className={styles.HeroButtonCircle}></div>
         <div className={styles.HeroButtonText}>TRY DEMO</div>
       </div>
+      <div className={styles.SchemasContainer}></div>
+      <div className={styles.LogosContainer}></div>
     </div>
   );
 }

@@ -11,8 +11,6 @@ import Footer from "@/components/homepage/utils/Footer";
 import Navbar from "@/components/homepage/utils/Navbar";
 import styles from "./page.module.css";
 import { useElementSize } from "@mantine/hooks";
-import useStore from "@/components/homepage/state/Store";
-import { useEffect } from "react";
 
 function page() {
   const { ref, width } = useElementSize();
@@ -20,7 +18,7 @@ function page() {
   return (
     <div className={styles.Container} ref={ref}>
       <Navbar />
-      <Hero />
+      <Hero width={width} />
       <Business />
       <Growth />
       <Software />

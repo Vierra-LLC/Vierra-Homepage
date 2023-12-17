@@ -7,6 +7,10 @@
   margin-top: 50px;
 }
 
+.Container > * {
+  z-index: 999;
+}
+
 .HeroTitle {
   font-weight: 600;
   font-size: 55px;
@@ -45,4 +49,12 @@
 
 .HeroButtonText {
   color: black;
+}
+
+.SchemasContainer,
+.LogosContainer {
+  width: 90%;
+  height: 120px;
+  border: 1px solid black;
+  margin-bottom: 50px;
 }

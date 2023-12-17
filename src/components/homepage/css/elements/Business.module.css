@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.Container > * {
+  z-index: 999;
+}
+
 .MainTitle {
   font-weight: 600;
   font-size: 45px;

@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.Container > * {
+  z-index: 999;
+}
+
 .Buttons {
   display: flex;
   gap: 20px;

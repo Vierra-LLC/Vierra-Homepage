@@ -4,6 +4,7 @@
   width: 1000px;
   border-radius: 1000px;
   position: absolute;
-  /* right: -30vw; */
-  filter: blur(30px);
+  filter: blur(50px);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
 }

@@ -103,7 +103,7 @@ function Hero({ width }) {
       <div className={styles.LogosContainer}>
         {logos.map((logos, i) => (
           <div key={i}>
-            <Image src={logos.image} height={75} />
+            <Image src={logos.image} height={75} alt={"image"} />
           </div>
         ))}
       </div>

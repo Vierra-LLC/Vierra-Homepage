@@ -31,8 +31,8 @@ function Business({ width }) {
           <div>B2B</div>
         </div>
         <div className={styles.RightSideContext}>
-          " improving efficienty, reducing errors, and enhancing customer
-          experience. With our high impact tools "
+          &quot; improving efficienty, reducing errors, and enhancing customer
+          experience. With our high impact tools &quot;
         </div>
         <div className={styles.RightSideSlider}>
           <div></div>

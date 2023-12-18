@@ -13,7 +13,7 @@ import styles from "./page.module.css";
 import { useElementSize } from "@mantine/hooks";
 
 function page() {
-  const { ref, width } = useElementSize();
+  const { ref, width, height } = useElementSize();
 
   return (
     <div className={styles.Container} ref={ref}>

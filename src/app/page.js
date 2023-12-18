@@ -12,7 +12,7 @@ import Navbar from "@/components/homepage/utils/Navbar";
 import styles from "./page.module.css";
 import { useElementSize } from "@mantine/hooks";
 
-function page() {
+function Page() {
   const { ref, width, height } = useElementSize();
 
   return (
@@ -30,4 +30,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

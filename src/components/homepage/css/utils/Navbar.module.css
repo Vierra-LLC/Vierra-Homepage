@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
+}
+
+.Container > * {
+  z-index: 999;
 }
 
 .Left {
@@ -51,6 +56,7 @@
   color: white;
   display: flex;
   align-items: center;
+  cursor: pointer;
   justify-content: center;
   gap: 5px;
   font-weight: 500;
@@ -68,4 +74,5 @@
 .LoginWord {
   color: white;
   background-color: black;
+  align-items: center;
 }

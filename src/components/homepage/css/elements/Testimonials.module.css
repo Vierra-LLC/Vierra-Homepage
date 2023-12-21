@@ -4,6 +4,10 @@
   margin-top: 0px;
 }
 
+.Container > * {
+  z-index: 999;
+}
+
 .Text {
   display: flex;
   flex-direction: column;

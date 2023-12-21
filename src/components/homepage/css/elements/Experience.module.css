@@ -2,6 +2,10 @@
   margin: 100px auto;
 }
 
+.Container > * {
+  z-index: 999;
+}
+
 .TextContainer {
   text-align: center;
   display: flex;

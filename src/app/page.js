@@ -1,26 +1,31 @@
-import Case from "@/components/elements/Case";
-import Experience from "@/components/elements/Experience";
-import Hero from "@/components/elements/Hero";
-import Testimonials from "@/components/elements/Testimonials";
-import Footer from "@/components/utils/Footer";
-import Navbar from "@/components/utils/Navbar";
+import React, { lazy, Suspense } from 'react';
 
-function page() {
+const LazyHero = lazy(() => import('@/components/elements/Hero'));
+const LazyExperience = lazy(() => import('@/components/elements/Experience'));
+const LazyCase = lazy(() => import('@/components/elements/Case'));
+const LazyTestimonials = lazy(() => import('@/components/elements/Testimonials'));
+const LazyFooter = lazy(() => import('@/components/utils/Footer'));
+const LazyNavbar = lazy(() => import('@/components/utils/Navbar'));
+
+function Page() {
   const block = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   };
+
   return (
     <div style={block}>
-      <Navbar />
-      <Hero />
-      <Experience />
-      <Case />
-      <Testimonials />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyNavbar />
+        <LazyHero />
+        <LazyExperience />
+        <LazyCase />
+        <LazyTestimonials />
+        <LazyFooter />
+      </Suspense>
     </div>
   );
 }
 
-export default page;
+export default Page;

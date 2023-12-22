@@ -1,6 +1,6 @@
 import styles from "../css/utils/Circles.module.css";
 
-function Circles({ left, right, top, bottom, color, width }) {
+function Circles({ left, right, top, bottom, color, width, margintop }) {
   const style = {
     // background: radial-gradient(
     //   50.11% 50.11% at 50% 49.89%,
@@ -14,6 +14,7 @@ function Circles({ left, right, top, bottom, color, width }) {
     left: left,
     right: right,
     top: top,
+    marginTop: margintop,
   };
   return <div style={style} className={styles.Circle}></div>;
 }

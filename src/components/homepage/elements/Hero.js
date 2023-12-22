@@ -13,6 +13,8 @@ import Cloud from "./logos/Cloud.png";
 import Hues from "./logos/Hues.png";
 import Scale from "./logos/Scale.png";
 import Invert from "./logos/Invert.png";
+import Plus from "./addons/hero/Plus.png";
+import Factor from "./addons/hero/Factor.png";
 
 function Hero({ width }) {
   const list = [
@@ -76,7 +78,14 @@ function Hero({ width }) {
       <div className={styles.HeroTitle}>
         Realtime <span className={global.HighLightPurple}>solution</span>{" "}
         <span className={global.HighLightSemiPurple}>tools</span> for your
-        entire business
+        entire{" "}
+        <div className={styles.FactorPic}>
+          <Image src={Factor} alt={"Factor"} />
+        </div>
+        <div className={styles.PlusPic}>
+          <Image src={Plus} alt={"Plus"} />
+        </div>
+        business
       </div>
       <div className={styles.HeroContext}>
         Our comprehensive tool offers small business owners a one-stop-shop

@@ -1,9 +1,18 @@
 import styles from "../css/elements/Growth.module.css";
 import global from "../css/Glodal.module.css";
+import Circles from "../utils/Circles";
 
-function Growth() {
+function Growth({ width }) {
   return (
     <div className={styles.Container}>
+      <Circles
+        right={
+          !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+        }
+        color={true}
+        width={width}
+        margintop={"50px"}
+      />
       <div className={styles.Text}>
         <div className={global.TinyTitle}>
           <span className={global.HighLightRed}>growth</span>

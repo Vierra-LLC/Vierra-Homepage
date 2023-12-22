@@ -1,4 +1,5 @@
 import styles from "../css/utils/Navbar.module.css";
+import { motion } from "framer-motion";
 
 function Navbar() {
   return (
@@ -15,6 +16,11 @@ function Navbar() {
       </div>
       <div className={styles.Right}>
         <div className={styles.Connect}>CONNECT WITH US</div>
+        <div className={styles.Dropdown}>
+          <div className={styles.DropdownLine}></div>
+          <div className={styles.DropdownLine}></div>
+          <div className={styles.DropdownLine}></div>
+        </div>
         <div className={styles.Login}>
           <div className={styles.LoginCircle}></div>
           <div className={styles.LoginWord}>LOGIN</div>

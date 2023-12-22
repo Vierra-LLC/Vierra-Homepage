@@ -13,8 +13,9 @@
 
 .HeroTitle {
   font-weight: 600;
-  font-size: 55px;
+  font-size: clamp(40px, 3.4vw, 55px);
   width: 550px;
+  height: 171px;
   text-align: center;
   line-height: 57px;
 }
@@ -53,7 +54,7 @@
 
 .SchemasContainer,
 .LogosContainer {
-  width: 90%;
+  width: clamp(1px, 110%, 1550px);
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -103,4 +104,36 @@
   flex-grow: 1;
   /* height: calc(100% - 120px); */
   height: 50%;
+}
+
+.FactorPic {
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 460px;
+}
+
+.PlusPic {
+  height: max-content;
+  width: max-content;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+  .HeroTitle {
+    font-size: clamp(31px, 3.4vw, 55px);
+    height: 131px;
+    line-height: 40px;
+    width: 500px;
+  }
+  .HeroContext {
+    width: 600px;
+    font-size: 14px;
+  }
 }

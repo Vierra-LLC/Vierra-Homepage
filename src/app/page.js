@@ -19,12 +19,12 @@ function Page() {
     <div className={styles.Container} ref={ref}>
       <Navbar />
       <Hero width={width} />
-      <Business />
-      <Growth />
-      <Software />
-      <Experience />
-      <Case />
-      <Testimonials />
+      <Business width={width} />
+      <Growth width={width} />
+      <Software width={width} />
+      <Experience width={width} />
+      <Case width={width} />
+      <Testimonials width={width} />
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 import styles from "../css/elements/Case.module.css";
 import global from "../css/Glodal.module.css";
-
+import React from "react";
 function Case() {
   return (
     <div className={styles.Container}>

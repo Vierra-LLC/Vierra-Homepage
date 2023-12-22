@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
+import React from "react";
 export const metadata = {
   title: "Vierra | Home",
   description:

@@ -1,4 +1,5 @@
 import styles from "./css/Box.module.css";
+import React from "react";
 
 function Testimonialbox({ name, position, context }) {
   return (

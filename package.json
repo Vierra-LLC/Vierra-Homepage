@@ -16,6 +16,7 @@
     "react-dom": "^18",
     "sharp": "^0.33.1",
     "swiper": "^11.0.5",
+    "typescript": "^5.3.3",
     "zustand": "^4.4.7"
   },
   "devDependencies": {

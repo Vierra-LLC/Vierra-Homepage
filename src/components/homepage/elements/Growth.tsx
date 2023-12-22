@@ -1,6 +1,6 @@
 import styles from "../css/elements/Growth.module.css";
 import global from "../css/Glodal.module.css";
-
+import React from "react";
 function Growth() {
   return (
     <div className={styles.Container}>

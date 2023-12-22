@@ -1,6 +1,6 @@
 import styles from "../css/utils/Footer.module.css";
 import global from "../css/Glodal.module.css";
-
+import React from "react";
 function Footer() {
   return (
     <div className={styles.Container}>

@@ -1,4 +1,4 @@
-import Circles from "@/components/homepage/utils/Circles";
+import Circles from "components/homepage/utils/Circles";
 import styles from "../css/elements/Hero.module.css";
 import global from "../css/Glodal.module.css";
 import Image from "next/image";
@@ -13,7 +13,7 @@ import Cloud from "./logos/Cloud.png";
 import Hues from "./logos/Hues.png";
 import Scale from "./logos/Scale.png";
 import Invert from "./logos/Invert.png";
-
+import React from "react";
 function Hero({ width }) {
   const list = [
     {

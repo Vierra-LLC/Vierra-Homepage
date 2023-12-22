@@ -1,6 +1,6 @@
 "use client";
-
-import Circles from "@/components/homepage/utils/Circles";
+import React from "react";
+import Circles from "components/homepage/utils/Circles";
 
 function page() {
   const style = {

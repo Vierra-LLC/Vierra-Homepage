@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import styles from "../css/elements/Testimonials.module.css";
 import global from "../css/Glodal.module.css";
 import Testimonialbox from "./utils/Testimonialbox";
-
+import React from "react";
 function Testimonials() {
   const list = useMemo(
     () => [

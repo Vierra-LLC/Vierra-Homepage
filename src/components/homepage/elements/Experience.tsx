@@ -1,6 +1,6 @@
 import styles from "../css/elements/Experience.module.css";
 import global from "../css/Glodal.module.css";
-
+import React from "react";
 function Experience() {
   return (
     <div className={styles.Container}>

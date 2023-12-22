@@ -1,6 +1,6 @@
 import styles from "../css/elements/Software.module.css";
 import global from "../css/Glodal.module.css";
-
+import React from "react";
 function Software() {
   return (
     <div className={styles.Container}>

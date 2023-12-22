@@ -1,7 +1,7 @@
 import styles from "../css/elements/Business.module.css";
 import global from "../css/Glodal.module.css";
 import Circles from "../utils/Circles";
-
+import React from "react";
 function Business({ width }) {
   return (
     <div className={styles.Container}>

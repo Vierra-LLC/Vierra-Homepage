@@ -142,15 +142,33 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .HeroTitle {
-    font-size: 21px;
+    font-size: 30px;
+    width: 400px;
+  }
+
+  .HeroContext {
+    width: 450px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .HeroButton {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .HeroTitle {
+    font-size: 25px;
     height: 131px;
-    line-height: 30px;
-    width: 300px;
+    line-height: 32px;
+    width: 330px;
   }
   .HeroContext {
-    width: 600px;
-    font-size: 14px;
+    width: 300px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }

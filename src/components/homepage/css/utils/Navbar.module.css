@@ -1,5 +1,5 @@
 .Container {
-  width: clamp(500px, 90%, 1400px);
+  width: clamp(50px, 90%, 1400px);
   height: 70px;
   display: flex;
   align-items: center;
@@ -108,5 +108,14 @@
     margin-top: 2px;
     margin-right: -20px;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 500px) {
+  .Login {
+    display: none;
+  }
+  .Dropdown {
+    margin-right: 5px;
   }
 }

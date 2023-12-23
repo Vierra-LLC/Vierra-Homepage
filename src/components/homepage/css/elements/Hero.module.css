@@ -54,7 +54,7 @@
 
 .SchemasContainer,
 .LogosContainer {
-  width: clamp(1px, 110%, 1550px);
+  width: clamp(1px, 130%, 1550px);
   height: max-content;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@
   width: max-content;
   position: absolute;
   margin-top: -20px;
-  margin-left: 460px;
+  margin-left: 500px;
 }
 
 .PlusPic {
@@ -135,10 +135,42 @@
     height: 131px;
     line-height: 40px;
     width: 500px;
+    margin-top: 50px;
   }
   .HeroContext {
     width: 600px;
     font-size: 14px;
+  }
+
+  .PlusPic {
+    margin-top: -65px;
+    margin-left: -60px;
+  }
+  .FactorPic {
+    margin-left: 400px;
+  }
+  .SchemaBox:first-child {
+    display: none;
+  }
+
+  .SchemaBox:last-child {
+    display: none;
+  }
+
+  .SchemasContainer,
+  .LogosContainer {
+    width: clamp(1px, 100%, 1550px);
+  }
+
+  .LogosContainer {
+    width: max-content;
+  }
+}
+
+@media (max-width: 950px) {
+  .FactorPic {
+    margin-top: -150px;
+    margin-left: 400px;
   }
 }
 
@@ -157,9 +189,17 @@
   .HeroButton {
     padding: 15px 30px;
   }
+
+  .FactorPic {
+    margin-top: -150px;
+    margin-left: 300px;
+  }
 }
 
 @media (max-width: 550px) {
+  .SchemaBox {
+    display: none;
+  }
   .HeroTitle {
     font-size: 25px;
     height: 131px;
@@ -170,5 +210,9 @@
     width: 300px;
     font-size: 12px;
     line-height: 20px;
+  }
+
+  .FactorPic {
+    display: none;
   }
 }

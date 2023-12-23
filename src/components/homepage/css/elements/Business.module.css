@@ -88,9 +88,19 @@
 }
 
 @media (max-width: 1024px) {
-  .RightSideSlider > * {
-    height: 3px;
-    background-color: purple;
-    flex-grow: 1;
+  .Container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .LeftSide {
+    text-align: center;
+    align-items: center;
+  }
+
+  .MainTitle {
+    text-align: center;
+    font-size: clamp(30px, 4vw, 35px);
+    line-height: 38px;
   }
 }

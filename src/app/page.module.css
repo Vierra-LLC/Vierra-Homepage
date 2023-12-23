@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: clamp(0px, 100%, 1900px);
   margin: 0 auto;
+  width: clamp(0px, 100%, 1900px);
   overflow-y: hidden;
 }

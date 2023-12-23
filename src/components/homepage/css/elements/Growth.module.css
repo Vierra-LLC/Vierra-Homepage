@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: clamp(1px, 95%, 1400px);
   margin: 50px auto;
 }
 
@@ -14,6 +15,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: max-content;
 }
 
 .Helped,
@@ -21,7 +23,7 @@
   text-align: center;
   margin: 20px auto;
   height: 120px;
-  width: 500px;
+  width: clamp(1px, 95%, 500px);
   border-radius: 8px;
   display: flex;
   flex-direction: column;

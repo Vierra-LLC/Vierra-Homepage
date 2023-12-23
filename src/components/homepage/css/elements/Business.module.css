@@ -103,4 +103,14 @@
     font-size: clamp(30px, 4vw, 35px);
     line-height: 38px;
   }
+
+  .RightSideContext {
+    font-size: clamp(20px, 4vw, 30px);
+  }
+
+  .RightSideButtons > * {
+    padding: 8px 0px;
+    font-size: 10px;
+    width: 100px;
+  }
 }

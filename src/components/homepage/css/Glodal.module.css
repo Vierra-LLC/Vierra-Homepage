@@ -25,14 +25,14 @@
 
 .SectionTitle {
   font-weight: 500;
-  font-size: 45px;
+  font-size: clamp(40px, 3.2vw, 45px);
   text-align: center;
   line-height: 50px;
   width: 650px;
 }
 
 .Context {
-  width: 500px;
+  width: clamp(1px, 95%, 500px);
   line-height: 24px;
   font-size: 14px;
 }
@@ -45,7 +45,13 @@
 @media (max-width: 1440px) {
   .Context {
     font-size: 13px;
-    width: clamp(1px, 90%, 480px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .SectionTitle {
+    font-size: clamp(30px, 4vw, 35px);
+    line-height: 38px;
   }
 }
 

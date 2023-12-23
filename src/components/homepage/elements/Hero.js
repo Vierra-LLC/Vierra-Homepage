@@ -61,7 +61,7 @@ function Hero({ width }) {
   ];
   return (
     <div className={styles.Container}>
-      <Circles
+      {/* <Circles
         right={
           !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
         }
@@ -74,14 +74,14 @@ function Hero({ width }) {
         color={false}
         top={"50px"}
         width={width}
-      />
+      /> */}
       <div className={styles.HeroTitle}>
         Realtime <span className={global.HighLightPurple}>solution</span>{" "}
         <span className={global.HighLightSemiPurple}>tools</span> for your
         entire{" "}
-        <div className={styles.FactorPic}>
+        {/* <div className={styles.FactorPic}>
           <Image src={Factor} alt={"Factor"} />
-        </div>
+        </div> */}
         <div className={styles.PlusPic}>
           <Image src={Plus} alt={"Plus"} />
         </div>

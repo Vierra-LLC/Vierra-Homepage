@@ -84,7 +84,7 @@
 .DropdownLine {
   background: #a886c5;
   width: 25px;
-  height: 2px;
+  height: 1px;
 }
 
 @media (max-width: 1024px) {

@@ -5,7 +5,7 @@ import Circles from "../utils/Circles";
 function Business({ width }) {
   return (
     <div className={styles.Container}>
-      <Circles
+      {/* <Circles
         right={
           !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
         }
@@ -24,7 +24,7 @@ function Business({ width }) {
         color={true}
         width={width}
         margintop={"-250px"}
-      />
+      /> */}
       <div className={styles.LeftSide}>
         <div className={global.TinyTitle}>
           <span className={global.HighLightRed}>growth</span>

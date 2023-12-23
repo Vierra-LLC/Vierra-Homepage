@@ -13,7 +13,7 @@
 
 .HeroTitle {
   font-weight: 600;
-  font-size: clamp(40px, 3.4vw, 55px);
+  font-size: 55px;
   width: 550px;
   height: 171px;
   text-align: center;
@@ -123,14 +123,31 @@
 }
 
 @media (max-width: 1440px) {
+  .HeroTitle {
+    width: 520px;
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 1024px) {
   .HeroTitle {
-    font-size: clamp(31px, 3.4vw, 55px);
+    font-size: 35px;
     height: 131px;
     line-height: 40px;
     width: 500px;
+  }
+  .HeroContext {
+    width: 600px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .HeroTitle {
+    font-size: 21px;
+    height: 131px;
+    line-height: 30px;
+    width: 300px;
   }
   .HeroContext {
     width: 600px;

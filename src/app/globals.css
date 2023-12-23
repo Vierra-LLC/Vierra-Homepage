@@ -10,3 +10,7 @@ body {
   background-color: white;
   overflow-x: hidden;
 }
+
+body > * {
+  overflow-x: hidden;
+}

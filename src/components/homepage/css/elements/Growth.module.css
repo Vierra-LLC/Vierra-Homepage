@@ -54,3 +54,13 @@
 .HelpedWord {
   font-size: 13.5px;
 }
+
+@media (max-width: 550px) {
+  .SilvedHighlight {
+    font-size: clamp(21px, 7vw, 40px);
+  }
+
+  .HelpedWord {
+    font-size: clamp(11px, 3.2vw, 13.5px);
+  }
+}

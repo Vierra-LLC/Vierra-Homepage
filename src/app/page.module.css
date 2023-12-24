@@ -3,6 +3,15 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: clamp(0px, 100%, 1900px);
-  overflow-y: hidden;
+  width: clamp(0px, 100vw, 1900px);
+  overflow-y: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.Container > * {
+  overflow-y: visible;
+  overflow-x: hidden;
 }

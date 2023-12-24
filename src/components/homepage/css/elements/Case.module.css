@@ -1,5 +1,6 @@
 .Container {
   margin: 100px auto;
+  padding: 0px 5px;
 }
 
 .Container > * {

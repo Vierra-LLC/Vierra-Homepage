@@ -20,7 +20,7 @@ function Page() {
       <Navbar />
       <Hero width={width} />
       <Business width={width} />
-      <Growth width={width} />
+      <Growth widthh={width} />
       <Software width={width} />
       <Experience width={width} />
       <Case width={width} />

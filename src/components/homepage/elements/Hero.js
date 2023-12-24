@@ -63,7 +63,7 @@ function Hero({ width }) {
     <div className={styles.Container}>
       <Circles
         right={
-          !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+          !width ? "-50vw" : `clamp(-${width / 100}px,-${width / 100}px,600px)`
         }
         color={true}
         top={"-100px"}

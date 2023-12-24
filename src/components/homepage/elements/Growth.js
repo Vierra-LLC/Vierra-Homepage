@@ -1,8 +1,12 @@
+"use client";
+
 import styles from "../css/elements/Growth.module.css";
 import global from "../css/Glodal.module.css";
 import Circles from "../utils/Circles";
+import { useElementSize } from "@mantine/hooks";
 
-function Growth({ width }) {
+function Growth({ widthh }) {
+  const { ref, width } = useElementSize();
   return (
     <div className={styles.Container}>
       {/* <Circles
@@ -10,7 +14,7 @@ function Growth({ width }) {
           !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
         }
         color={true}
-        width={width}
+        width={widthh}
         margintop={"50px"}
       /> */}
       <div className={styles.Text}>
@@ -20,7 +24,10 @@ function Growth({ width }) {
         <div className={global.SectionTitle}>
           Business <span className={global.HighLightSemiPurple}>growth.</span>
         </div>
-        <div className={global.Context}>
+        <div
+          className={global.Context}
+          style={{ width: width ? `${width}px` : "500px" }}
+        >
           According to a study by SCORE, a non-profit association for small
           businesses, the average revenue growth rate for small businesses with
           less than $5 million in annual{" "}
@@ -33,7 +40,7 @@ function Growth({ width }) {
           attention growth.
         </div>
       </div>
-      <div className={styles.Helped}>
+      <div className={styles.Helped} ref={ref}>
         <div className={styles.HelpedNumber}>
           <span className={styles.SilvedHighlight}>20,000+</span>
         </div>

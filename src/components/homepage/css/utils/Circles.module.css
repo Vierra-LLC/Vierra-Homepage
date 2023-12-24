@@ -1,6 +1,6 @@
 .Circle {
-  height: clamp(300px, 50vw, 1000px);
-  width: clamp(300px, 50vw, 1000px);
+  height: clamp(500px, 50vw, 1000px);
+  width: clamp(500px, 50vw, 1000px);
   border-radius: 1000px;
   position: absolute;
   filter: blur(50px);

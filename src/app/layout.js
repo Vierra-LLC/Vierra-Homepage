@@ -16,7 +16,7 @@ export const metadata = {
     url: "https://vierradev.com",
     type: "website",
     siteName: "Vierra",
-    images: ["https://vierradev.com/assets/meta-banner"],
+    images: ["https://vierradev.com/assets/meta-banner.png"],
     locale: "en_US",
   },
   twitter: {
@@ -27,7 +27,7 @@ export const metadata = {
     color: "#BA2A99",
     description:
       "Our comprehensive tool offers small business owners a one-stop-shop solution to manage their accounting, sales, marketing, outreach efforts, CRM, financial models, email campaigns, QuickBooks integration, record-keeping, and a range of other crucial business functions.",
-    images: ["https://vierradev.com/assets/meta-banner"],
+    images: ["https://vierradev.com/assets/meta-banner.png"],
   },
 }
 

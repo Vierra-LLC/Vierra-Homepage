@@ -5,7 +5,6 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Vierra | Home",
-  theme_color: "#BA2A99",
   description:
     "Our comprehensive tool offers small business owners a one-stop-shop solution to manage their accounting, sales, marketing, outreach efforts, CRM, financial models, email campaigns, QuickBooks integration, record-keeping, and a range of other crucial business functions.",
   author: "Alexersion",
@@ -24,7 +23,6 @@ export const metadata = {
     domain: "vierradev.com",
     url: "vierradev.com",
     title: "Vierra | Home",
-    theme_color: "#BA2A99",
     description:
       "Our comprehensive tool offers small business owners a one-stop-shop solution to manage their accounting, sales, marketing, outreach efforts, CRM, financial models, email campaigns, QuickBooks integration, record-keeping, and a range of other crucial business functions.",
     images: ["https://vierradev.com/assets/meta-banner.png"],

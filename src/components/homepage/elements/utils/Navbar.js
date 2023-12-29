@@ -1,4 +1,4 @@
-import styles from "../css/utils/Navbar.module.css";
+import styles from "./css/Navbar.module.css";
 import { motion } from "framer-motion";
 
 function Navbar() {

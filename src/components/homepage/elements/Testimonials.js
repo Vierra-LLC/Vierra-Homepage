@@ -1,11 +1,33 @@
-import { useMemo } from "react";
-import styles from "../css/elements/Testimonials.module.css";
-import global from "../css/Glodal.module.css";
+import styles from "./css/Testimonials.module.css";
+import global from "./css/Global.module.css";
+import Circles from "./utils/Circles";
 import Testimonialbox from "./utils/Testimonialbox";
+import { useMemo } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
-function Testimonials() {
+function Testimonials({ width }) {
   const list = useMemo(
     () => [
+      {
+        name: "Jaxon Easton",
+        context:
+          "The management software tool that I reviewed is highly effective in managing projects, tasks, and team communication. It has a user-friendly interface and provides excellent collaboration features. The customizable dashboard allows quick access to all the important information, and the auto-assignment and reminder features help keep everyone on track. The tool's analytics section offers insightful reports to track progress and performance. Overall, I think this management software tool is a great option for teams and businesses looking to streamline their workflows and improve productivity.",
+        position: "Production Manager",
+      },
+      {
+        name: "Jaxon Easton",
+        context:
+          "The management software tool that I reviewed is highly effective in managing projects, tasks, and team communication. It has a user-friendly interface and provides excellent collaboration features. The customizable dashboard allows quick access to all the important information, and the auto-assignment and reminder features help keep everyone on track. The tool's analytics section offers insightful reports to track progress and performance. Overall, I think this management software tool is a great option for teams and businesses looking to streamline their workflows and improve productivity.",
+        position: "Production Manager",
+      },
+      {
+        name: "Jaxon Easton",
+        context:
+          "The management software tool that I reviewed is highly effective in managing projects, tasks, and team communication. It has a user-friendly interface and provides excellent collaboration features. The customizable dashboard allows quick access to all the important information, and the auto-assignment and reminder features help keep everyone on track. The tool's analytics section offers insightful reports to track progress and performance. Overall, I think this management software tool is a great option for teams and businesses looking to streamline their workflows and improve productivity.",
+        position: "Production Manager",
+      },
       {
         name: "Jaxon Easton",
         context:
@@ -27,32 +49,85 @@ function Testimonials() {
     ],
     []
   );
-
   return (
-    <div className={styles.Container}>
-      <div className={styles.Text}>
-        <div className={global.HighLightRed}>features</div>
-        <div className={styles.MainTitle}>
-          <div className={styles.MainTitleBlack}>Our Client</div>
-          <div className={styles.MainTitlePic}></div>
-          <div className={global.HighLightSemiPurple}>Testimonials</div>
+    <div className={global.Container}>
+      <div className={global.Side}>
+        <Circles
+          left={
+            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+          }
+          color={true}
+          width={width}
+          margintop={"-250px"}
+        />
+      </div>
+      <div className={global.Main}>
+        <div className={styles.Text}>
+          <div className={global.HighLightRed}>features</div>
+          <div className={styles.MainTitle}>
+            <div className={styles.MainTitleBlack}>Our Client</div>
+            <div className={styles.MainTitlePic}></div>
+            <div className={global.HighLightSemiPurple}>Testimonials</div>
+          </div>
+          <div className={global.Context}>
+            Our clients have praised our solution tools, describing them as
+            incredibly useful and user-friendly. They appreciate the efficiency
+            and accuracy they bring to their work, and the ability to save them
+            time and effort.
+          </div>
         </div>
-        <div className={global.Context}>
-          Our clients have praised our solution tools, describing them as
-          incredibly useful and user-friendly. They appreciate the efficiency
-          and accuracy they bring to their work, and the ability to save them
-          time and effort.
+        <div className={styles.Slider}>
+          <Swiper
+            style={{ display: "flex", justifyContent: "center" }}
+            loop={true}
+            className="mySwiper"
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+            modules={[Autoplay]}
+          >
+            {list.map((bop, i) => (
+              <SwiperSlide key={i}>
+                <Testimonialbox
+                  key={i}
+                  name={bop.name}
+                  context={bop.context}
+                  position={bop.position}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
-      <div className={styles.Slider}>
-        {list.map((bop, i) => (
-          <Testimonialbox
-            key={i}
-            name={bop.name}
-            context={bop.context}
-            position={bop.position}
-          />
-        ))}
+      <div className={global.Side}>
+        <Circles
+          right={
+            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+          }
+          color={true}
+          width={width}
+          margintop={"-200px"}
+        />
+        <Circles
+          right={
+            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+          }
+          color={false}
+          width={width}
+          margintop={"-100px"}
+          marginright={"400px"}
+        />
       </div>
     </div>
   );

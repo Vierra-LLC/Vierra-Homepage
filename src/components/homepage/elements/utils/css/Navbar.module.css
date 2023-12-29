@@ -1,5 +1,5 @@
 .Container {
-  width: clamp(50px, 90%, 1400px);
+  width: clamp(50px, 100%, 1400px);
   height: 70px;
   display: flex;
   align-items: center;

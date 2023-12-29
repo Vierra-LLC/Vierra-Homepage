@@ -1,33 +1,19 @@
-"use client";
+import styles from "./css/Growth.module.css";
+import global from "./css/Global.module.css";
+import Circles from "./utils/Circles";
 
-import styles from "../css/elements/Growth.module.css";
-import global from "../css/Glodal.module.css";
-import Circles from "../utils/Circles";
-import { useElementSize } from "@mantine/hooks";
-
-function Growth({ widthh }) {
-  const { ref, width } = useElementSize();
+function Growth({ width }) {
   return (
-    <div className={styles.Container}>
-      {/* <Circles
-        right={
-          !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
-        }
-        color={true}
-        width={widthh}
-        margintop={"50px"}
-      /> */}
-      <div className={styles.Text}>
+    <div className={global.Container} style={{ marginTop: "100px" }}>
+      <div className={global.Side}></div>
+      <div className={global.Main}>
         <div className={global.TinyTitle}>
           <span className={global.HighLightRed}>growth</span>
         </div>
-        <div className={global.SectionTitle}>
+        <div className={global.SectionTitle} style={{ marginBottom: "30px" }}>
           Business <span className={global.HighLightSemiPurple}>growth.</span>
         </div>
-        <div
-          className={global.Context}
-          style={{ width: width ? `${width}px` : "500px" }}
-        >
+        <div className={global.Context}>
           According to a study by SCORE, a non-profit association for small
           businesses, the average revenue growth rate for small businesses with
           less than $5 million in annual{" "}
@@ -38,19 +24,29 @@ function Growth({ widthh }) {
           location of the business, these statistics provide a general overview
           of what small business owners can expect in terms of revenue and
           attention growth.
+        </div>{" "}
+        <div className={styles.Helped}>
+          <div className={styles.HelpedNumber}>
+            <span className={styles.SilvedHighlight}>20,000+</span>
+          </div>
+          <div className={styles.HelpedWord}>Business helped</div>
+        </div>
+        <div className={styles.Gained}>
+          <div className={styles.HelpedNumber}>
+            <span className={styles.SilvedHighlight}>20M+</span>
+          </div>
+          <div className={styles.HelpedWord}>Business revenue gained</div>
         </div>
       </div>
-      <div className={styles.Helped} ref={ref}>
-        <div className={styles.HelpedNumber}>
-          <span className={styles.SilvedHighlight}>20,000+</span>
-        </div>
-        <div className={styles.HelpedWord}>Business helped</div>
-      </div>
-      <div className={styles.Gained}>
-        <div className={styles.HelpedNumber}>
-          <span className={styles.SilvedHighlight}>20M+</span>
-        </div>
-        <div className={styles.HelpedWord}>Business revenue gained</div>
+      <div className={global.Side}>
+        <Circles
+          right={
+            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
+          }
+          color={true}
+          width={width}
+          margintop={"-200px"}
+        />
       </div>
     </div>
   );

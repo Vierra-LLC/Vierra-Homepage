@@ -1,17 +1,20 @@
-.Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  width: clamp(0px, 100vw, 1900px);
-  overflow-y: visible;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+/* * {
+  overflow-x: hidden;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  /* letter-spacing: 0.02rem; */
+  letter-spacing: -0.01em;
+  background-color: white;
   overflow-x: hidden;
 }
 
-.Container > * {
-  overflow-y: visible;
+body > * {
   overflow-x: hidden;
 }

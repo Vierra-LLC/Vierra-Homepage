@@ -1,0 +1,3 @@
+Same font settings for all titles of sections
+All text with underline will have same size
+First 3 context will not have text alignment, rest will

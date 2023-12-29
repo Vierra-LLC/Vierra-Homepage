@@ -3,29 +3,41 @@
 import Business from "@/components/homepage/elements/Business";
 import Case from "@/components/homepage/elements/Case";
 import Experience from "@/components/homepage/elements/Experience";
+import Footer from "@/components/homepage/elements/Footer";
 import Growth from "@/components/homepage/elements/Growth";
 import Hero from "@/components/homepage/elements/Hero";
 import Software from "@/components/homepage/elements/Software";
 import Testimonials from "@/components/homepage/elements/Testimonials";
-import Footer from "@/components/homepage/utils/Footer";
-import Navbar from "@/components/homepage/utils/Navbar";
-import styles from "./page.module.css";
 import { useElementSize } from "@mantine/hooks";
 
 function Page() {
-  const { ref, width, height } = useElementSize();
+  const main = {
+    display: "flex",
+    justifyContent: "center",
+    overflow: "hidden",
+  };
+  const container = {
+    display: "flex",
+    width: "clamp(1px,100vw,1920px)",
+    minHeight: "100vh",
+    justifyContent: "space-between",
+    flexDirection: "column",
+  };
+
+  const { width, ref } = useElementSize();
 
   return (
-    <div className={styles.Container} ref={ref}>
-      <Navbar />
-      <Hero width={width} />
-      <Business width={width} />
-      <Growth widthh={width} />
-      <Software width={width} />
-      <Experience width={width} />
-      <Case width={width} />
-      <Testimonials width={width} />
-      <Footer />
+    <div style={main}>
+      <div style={container} ref={ref}>
+        <Hero width={width} />
+        <Business width={width} />
+        <Growth width={width} />
+        <Software width={width} />
+        <Experience width={width} />
+        <Case width={width} />
+        <Testimonials width={width} />
+        <Footer width={width} />
+      </div>
     </div>
   );
 }

@@ -7,11 +7,10 @@ function Software() {
       <div className={global.TinyTitle}>
         <span className={global.HighLightRed}>Softwares</span>
       </div>
-      <div className={global.SectionTitle} style={{ width: "465px" }}>
+      <div className={global.SectionTitle}>
         Launch your products with our{" "}
         <span className={global.HighLightRed}>
-          <span className={global.HighLightPurple}>top</span> of the line
-          software
+          <span className={global.HighLightRed}>top</span> of the line software
         </span>
       </div>
       <div

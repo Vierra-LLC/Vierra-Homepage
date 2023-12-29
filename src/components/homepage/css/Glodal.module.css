@@ -58,5 +58,12 @@
 @media (max-width: 550px) {
   .Context {
     font-size: 11px;
+    border: 1px solid black;
+  }
+
+  .SectionTitle {
+    font-size: clamp(20px, 4vw, 25px);
+    width: 300px;
+    line-height: 28px;
   }
 }

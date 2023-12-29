@@ -176,14 +176,15 @@
 
 @media (max-width: 700px) {
   .HeroTitle {
-    font-size: 30px;
-    width: 400px;
+    font-size: 35px;
+    width: 440px;
   }
 
   .HeroContext {
-    width: 450px;
+    width: 550px;
     font-size: 12px;
     line-height: 25px;
+    margin-top: -50px;
   }
 
   .HeroButton {
@@ -201,13 +202,13 @@
     display: none;
   }
   .HeroTitle {
-    font-size: 25px;
+    font-size: 30px;
     height: 131px;
     line-height: 32px;
-    width: 330px;
+    width: 300px;
   }
   .HeroContext {
-    width: 300px;
+    width: 350px;
     font-size: 12px;
     line-height: 20px;
   }

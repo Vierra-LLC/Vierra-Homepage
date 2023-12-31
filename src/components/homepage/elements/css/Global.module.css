@@ -47,10 +47,10 @@
 
 .SectionTitle {
   font-weight: 500;
-  font-size: clamp(25px, 3.2vw, 45px);
+  font-size: clamp(35px, 5.2vw, 45px);
   text-align: center;
-  line-height: 45px;
-  width: 465px;
+  line-height: clamp(40px, 5.2vw, 45px);
+  width: clamp(1px, 95%, 465px);
 }
 
 .TextUnderline {
@@ -79,7 +79,8 @@
 }
 
 .Context {
-  width: clamp(1px, 95%, 500px);
+  /* width: clamp(1px, 95%, 500px); */
+  width: clamp(1px, 95%, 405px);
   line-height: 24px;
   font-size: 14px;
 }

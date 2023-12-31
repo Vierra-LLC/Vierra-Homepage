@@ -34,3 +34,9 @@
 .HelpedWord {
   font-size: 13.5px;
 }
+
+@media (max-width: 500px) {
+  .SilvedHighlight {
+    font-size: clamp(25px, 8.2vw, 45px);
+  }
+}

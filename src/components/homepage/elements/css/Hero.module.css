@@ -6,7 +6,7 @@
 .TextContainer {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: clamp(25px, 4.2vw, 40px);
   margin-top: 75px;
   align-items: center;
 }
@@ -95,4 +95,10 @@
   flex-grow: 1;
   /* height: calc(100% - 120px); */
   height: 50%;
+}
+
+@media (max-width: 700px) {
+  .HeroButton {
+    padding: 15px 30px;
+  }
 }

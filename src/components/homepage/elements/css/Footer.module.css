@@ -23,6 +23,7 @@
   gap: 10px;
   font-size: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .Schedule {
@@ -99,4 +100,10 @@
 .FooterLeft {
   border: 1px solid black;
   flex-grow: 1;
+}
+
+@media (max-width: 492px) {
+  .Buttons {
+    justify-content: center;
+  }
 }

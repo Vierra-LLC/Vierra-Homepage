@@ -11,12 +11,19 @@
   margin: 0 auto;
 }
 
-.MainTitle {
+/* .MainTitle {
   font-weight: 500;
   font-size: clamp(40px, 3vw, 45px);
   line-height: 50px;
   width: 400px;
   letter-spacing: 0.02rem;
+} */
+
+.MainTitle {
+  font-weight: 500;
+  font-size: clamp(35px, 5.2vw, 45px);
+  line-height: clamp(40px, 5.2vw, 45px);
+  width: clamp(1px, 95%, 465px);
 }
 
 .LeftSide {
@@ -98,6 +105,12 @@
   .LeftSide {
     text-align: center;
     align-items: center;
+    margin: 0 auto;
+    margin-right: 0px;
+  }
+
+  .RightSide {
+    width: 100%;
   }
 
   .MainTitle {
@@ -114,5 +127,17 @@
     padding: 8px 0px;
     font-size: 10px;
     width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .RightSideSlider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .RightSideContext {
+    margin-bottom: -50px;
   }
 }

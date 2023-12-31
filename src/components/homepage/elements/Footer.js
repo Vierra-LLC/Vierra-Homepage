@@ -25,11 +25,20 @@ function Footer({ width }) {
       </div>
       <div className={global.Main}>
         <div className={styles.EndCredits}>
-          <div className={global.SectionTitle} style={{ width: "600px" }}>
-            <div className={global.SectionTitle} style={{ width: "600px" }}>
+          <div
+            className={global.SectionTitle}
+            style={{ width: "clamp(1px, 95%, 620px)" }}
+          >
+            <div
+              className={global.SectionTitle}
+              style={{ width: "clamp(1px, 95%, 620px)" }}
+            >
               We invite you to try our
             </div>
-            <span className={global.HighLightRed} style={{ width: "600px" }}>
+            <span
+              className={global.HighLightRed}
+              style={{ width: "clamp(1px, 95%, 620px)" }}
+            >
               innovative solutions tools.
             </span>
           </div>

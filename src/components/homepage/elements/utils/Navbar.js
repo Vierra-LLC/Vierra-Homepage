@@ -1,9 +1,15 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import styles from "./css/Navbar.module.css";
 import { motion } from "framer-motion";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  let bop = {};
+  if (typeof window !== "undefined") {
+    bop = document.scrollingElement;
+  }
   function useImperativeDisableScroll({ element, disabled }) {
     useEffect(() => {
       if (!element) {
@@ -17,7 +23,7 @@ function Navbar() {
   }
 
   useImperativeDisableScroll({
-    element: document.scrollingElement,
+    element: bop,
     disabled: nav,
   });
 
@@ -35,10 +41,12 @@ function Navbar() {
       </div>
       <div className={styles.Right}>
         <div className={styles.Connect}>CONNECT WITH US</div>
-        <div className={styles.Dropdown} onClick={() => setNav(!nav)}>
-          <div className={styles.DropdownLine}></div>
-          <div className={styles.DropdownLine}></div>
-          <div className={styles.DropdownLine}></div>
+        <div className={styles.Dropdown}>
+          <div className={styles.Dropdowndowner} onClick={() => setNav(!nav)}>
+            <div className={styles.DropdownLine}></div>
+            <div className={styles.DropdownLine}></div>
+            <div className={styles.DropdownLine}></div>
+          </div>
           <motion.div
             className={styles.DropdownNav}
             animate={{

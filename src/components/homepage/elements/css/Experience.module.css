@@ -35,6 +35,7 @@
   margin-top: 50px;
   display: flex;
   gap: 100px;
+  border: 1px solid black;
   cursor: default;
 }
 
@@ -132,6 +133,7 @@
 .RightSide {
   height: 550px;
   width: 60%;
+  border: 1px solid black;
 }
 
 .RightButtons {

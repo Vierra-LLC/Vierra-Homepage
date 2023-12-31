@@ -1,6 +1,8 @@
+import Image from "next/image";
 import styles from "./css/Footer.module.css";
 import global from "./css/Global.module.css";
 import Circles from "./utils/Circles";
+import Logo from "./addons/footer/Logo.png";
 
 function Footer({ width }) {
   return (
@@ -21,6 +23,14 @@ function Footer({ width }) {
           color={true}
           width={width}
           margintop={"-250px"}
+        />
+        <Circles
+          left={
+            !width ? "-50vw" : `clamp(-${width / 7}px,-${width / 7}px,600px)`
+          }
+          color={false}
+          width={width}
+          bottom={"0px"}
         />
       </div>
       <div className={global.Main}>
@@ -52,7 +62,11 @@ function Footer({ width }) {
           </div>
         </div>
         <div className={styles.Footer}>
-          <div className={styles.FooterLeft}></div>
+          <div className={styles.FooterLeft}>
+            <div style={{ position: "relative" }}>
+              <Image className={styles.FooterLogo} src={Logo} alt={"logo"} />
+            </div>
+          </div>
           <div className={styles.FooterRight}>
             <div className={styles.FooterIntro}>
               Whether it&apos;s software, hardware, or a combination of both,{" "}
@@ -63,7 +77,7 @@ function Footer({ width }) {
             </div>
             <div className={styles.FooterSection}>
               <div className={styles.SectionChild}>
-                <div className={styles.SectionTitle}>Support</div>
+                <div className={styles.FooterSectionTitle}>Support</div>
                 <div className={styles.SectionButton}>Help Centre</div>
                 <div className={styles.SectionButton}>FAQ</div>
                 <div className={styles.SectionButton}>Contact</div>
@@ -71,13 +85,13 @@ function Footer({ width }) {
                 <div className={styles.SectionButton}>Status</div>
               </div>
               <div className={styles.SectionChild}>
-                <div className={styles.SectionTitle}>Legal</div>
+                <div className={styles.FooterSectionTitle}>Legal</div>
                 <div className={styles.SectionButton}>Legal Notice</div>
                 <div className={styles.SectionButton}>Privacy Policy</div>
                 <div className={styles.SectionButton}>Terms of Use</div>
               </div>
               <div className={styles.SectionChild}>
-                <div className={styles.SectionTitle}>Social</div>
+                <div className={styles.FooterSectionTitle}>Social</div>
                 <div className={styles.SectionButton}>Instagram</div>
                 <div className={styles.SectionButton}>Twitter</div>
                 <div className={styles.SectionButton}>Facebook</div>
@@ -87,7 +101,7 @@ function Footer({ width }) {
             </div>
             <div className={styles.FooterSection}>
               <div className={styles.SectionChild}>
-                <div className={styles.SectionTitle}>Company</div>
+                <div className={styles.FooterSectionTitle}>Company</div>
                 <div className={styles.SectionButton}>About</div>
                 <div className={styles.SectionButton}>Leadership</div>
                 <div className={styles.SectionButton}>Blog</div>
@@ -96,7 +110,7 @@ function Footer({ width }) {
                 <div className={styles.SectionButton}>Referal Program</div>
               </div>
               <div className={styles.SectionChild}>
-                <div className={styles.SectionTitle}>Product</div>
+                <div className={styles.FooterSectionTitle}>Product</div>
                 <div className={styles.SectionButton}>Overview</div>
                 <div className={styles.SectionButton}>Features</div>
                 <div className={styles.SectionButton}>Pricing</div>
@@ -117,7 +131,7 @@ function Footer({ width }) {
           color={false}
           width={width}
           margintop={"700px"}
-          marginright={"100px"}
+          marginright={"500px"}
         />
       </div>
     </div>

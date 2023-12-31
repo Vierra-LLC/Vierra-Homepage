@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import styles from "./css/Navbar.module.css";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Logo from "../addons/footer/Vierralogo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -30,7 +32,9 @@ function Navbar() {
   return (
     <div className={styles.Container}>
       <div className={styles.Left}>
-        <div className={styles.Logo}>vierra</div>
+        <div className={styles.Logo}>
+          <Image src={Logo} alt={"vierralogo"} height={50} />
+        </div>
         <div className={styles.Buttons}>
           <div>Features</div>
           <div>Demo</div>

@@ -1,17 +1,25 @@
+"use client";
+import { useElementSize } from "@mantine/hooks";
 import styles from "./css/Case.module.css";
 import global from "./css/Global.module.css";
 import Circles from "./utils/Circles";
 
-function Case({ width }) {
+function Case({ width: wd }) {
+  const { ref, width: bop } = useElementSize();
   return (
-    <div className={global.Container}>
+    <div className={global.Container} ref={ref}>
       <div className={global.Side}></div>
       <div className={global.Main}>
         <div className={styles.TextContainer}>
           <div className={global.TinyTitle}>
             <span className={global.HighLightRed}>features</span>
           </div>
-          <div className={global.SectionTitle} style={{ width: "max-content" }}>
+          <div
+            className={global.SectionTitle}
+            style={{
+              width: "max-width",
+            }}
+          >
             Case studies/
             <span className={global.HighLightSemiPurple}>articles.</span>
           </div>
@@ -54,19 +62,15 @@ function Case({ width }) {
       </div>
       <div className={global.Side}>
         <Circles
-          right={
-            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
-          }
+          right={!wd ? "-50vw" : `clamp(-${wd / 4}px,-${wd / 4}px,600px)`}
           color={false}
-          width={width}
+          width={wd}
           margintop={"-200px"}
         />
         <Circles
-          right={
-            !width ? "-50vw" : `clamp(-${width / 4}px,-${width / 4}px,600px)`
-          }
+          right={!wd ? "-50vw" : `clamp(-${wd / 4}px,-${wd / 4}px,600px)`}
           color={false}
-          width={width}
+          width={wd}
           margintop={"200px"}
           marginright={"300px"}
         />

@@ -31,12 +31,12 @@
 }
 
 .MainContent {
-  width: 80vw;
+  width: clamp(1px, 100%, 1250px);
   margin-top: 50px;
   display: flex;
-  gap: 100px;
-  border: 1px solid black;
+  justify-content: space-between;
   cursor: default;
+  gap: 40px;
 }
 
 .LeftSide {
@@ -132,13 +132,12 @@
 
 .RightSide {
   height: 550px;
-  width: 60%;
-  border: 1px solid black;
+  width: clamp(1px, 100%, 750px);
 }
 
 .RightButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -151,7 +150,6 @@
 
 .ButtonProgress {
   background-color: #ece0f8;
-  margin-left: 20px;
 }
 
 .ButtonManagement {
@@ -164,10 +162,6 @@
 
 .ButtonMeeting {
   background-color: #d8ddf6;
-}
-
-.ButtonMeeting {
-  margin-right: 20px;
 }
 
 .PicturesContainer {
@@ -193,7 +187,6 @@
   border-radius: 8px;
   width: 65px;
   height: 65px;
-  border: 1px solid rgba(128, 128, 128, 0.236);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,9 +196,14 @@
   font-size: 21px;
 }
 
+.PicturePic {
+  width: 100%;
+  height: 100%;
+}
+
 .AnalysisContainer {
   background-color: #c050a7;
-  height: 50px;
+  height: 60px;
   width: 350px;
   margin-top: 275px;
   border-radius: 8px;
@@ -226,9 +224,11 @@
 }
 
 .AnalysisClock {
-  border: 1px solid black;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 10px;
 }
 
@@ -239,7 +239,7 @@
 }
 
 .AnalysisUpperText {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.02rem;
 }
@@ -249,9 +249,8 @@
 }
 
 .AnalysisRightPicture {
-  border: 1px solid black;
-  width: 33px;
-  height: 33px;
+  width: 47px;
+  height: 47px;
   border-radius: 4px;
 }
 
@@ -271,7 +270,7 @@
 
 .UserFlowContainer {
   background-color: #6d73ff;
-  height: 50px;
+  height: 60px;
   width: 350px;
   margin-top: 75px;
   border-radius: 8px;
@@ -279,4 +278,53 @@
   justify-content: space-between;
   align-items: center;
   cursor: default;
+}
+
+@media (max-width: 1350px) {
+  .RightButtons > * {
+    padding: 10px clamp(10px, 2vw, 25px);
+    font-size: clamp(11px, 1vw, 13px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .LeftButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .LeftSide {
+    height: 580px;
+  }
+
+  .Demo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .MainContent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Navbar {
+    margin-top: -25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .NavbarButton {
+    font-size: clamp(12px, 2.5vw, 14px);
+    padding: 7px 10px;
+  }
+  .RightButtons > * {
+    padding: 8px clamp(8px, 2vw, 15px);
+    font-size: clamp(9px, 2vw, 13px);
+    border-radius: 4px;
+  }
+  .RightButtons {
+    gap: 8px;
+    flex-wrap: wrap;
+    width: clamp(1px, 100%, 500px);
+  }
 }

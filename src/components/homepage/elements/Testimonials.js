@@ -6,6 +6,11 @@ import { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Pictureone from "./addons/testimonials/Pictureone.png";
+import Picturetwo from "./addons/testimonials/Picturetwo.png";
+import Picturethree from "./addons/testimonials/Picturethree.png";
+import Picturefour from "./addons/testimonials/Picturefour.png";
+import Image from "next/image";
 
 function Testimonials({ width }) {
   const list = useMemo(
@@ -66,7 +71,20 @@ function Testimonials({ width }) {
           <div className={global.HighLightRed}>features</div>
           <div className={styles.MainTitle}>
             <div className={styles.MainTitleBlack}>Our Client</div>
-            <div className={styles.MainTitlePic}></div>
+            <div className={styles.MainTitlePic}>
+              <div className={styles.Pic}>
+                <Image alt={"Pic"} src={Pictureone} className={styles.Pic} />
+              </div>
+              <div className={styles.Pic}>
+                <Image alt={"Pic"} src={Picturetwo} className={styles.Pic} />
+              </div>
+              <div className={styles.Pic}>
+                <Image alt={"Pic"} src={Picturethree} className={styles.Pic} />
+              </div>
+              <div className={styles.Pic}>
+                <Image alt={"Pic"} src={Picturefour} className={styles.Pic} />
+              </div>
+            </div>
             <div className={global.HighLightSemiPurple}>Testimonials</div>
           </div>
           <div className={global.Context}>
@@ -86,11 +104,19 @@ function Testimonials({ width }) {
               disableOnInteraction: false,
             }}
             breakpoints={{
-              768: {
-                slidesPerView: 3,
+              700: {
+                slidesPerView: 2,
                 spaceBetween: 15,
               },
-              1024: {
+              1020: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1620: {
                 slidesPerView: 4,
                 spaceBetween: 30,
               },

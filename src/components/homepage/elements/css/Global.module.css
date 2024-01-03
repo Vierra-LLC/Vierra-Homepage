@@ -70,9 +70,6 @@
   margin-bottom: 30px;
 }
 
-.SectionTitleUnaligned {
-}
-
 .ContextAligned {
   width: clamp(1px, 95%, 500px);
   line-height: 24px;

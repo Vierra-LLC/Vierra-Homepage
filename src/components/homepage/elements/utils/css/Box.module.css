@@ -1,11 +1,12 @@
 .Container {
   height: 100%;
-  width: 400px;
+  width: clamp(1px, 28vw, 400px);
   border: 1px solid rgba(128, 128, 128, 0.15);
   border-radius: 8px;
   overflow: visible;
   background-color: rgba(255, 255, 255, 0.15);
   cursor: default;
+  margin: 0 auto;
 }
 
 .Container > * {
@@ -45,4 +46,22 @@
   padding-left: 10px;
   font-weight: 700;
   font-size: 25px;
+}
+
+@media (min-width: 1620px) {
+  .Container {
+    width: clamp(1px, 21vw, 400px);
+  }
+}
+
+@media (max-width: 1020px) {
+  .Container {
+    width: clamp(1px, 40vw, 400px);
+  }
+}
+
+@media (max-width: 700px) {
+  .Container {
+    width: 90%;
+  }
 }

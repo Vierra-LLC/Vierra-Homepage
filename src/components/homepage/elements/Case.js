@@ -3,7 +3,11 @@ import { useElementSize } from "@mantine/hooks";
 import styles from "./css/Case.module.css";
 import global from "./css/Global.module.css";
 import Circles from "./utils/Circles";
-
+import Left from "./addons/case/Left.png";
+import Middle from "./addons/case/Middle.png";
+import Right from "./addons/case/Right.png";
+import Image from "next/image";
+import { Arrow } from "./addons/Misc";
 function Case({ width: wd }) {
   const { ref, width: bop } = useElementSize();
   return (
@@ -37,28 +41,37 @@ function Case({ width: wd }) {
         </div>
         <div className={styles.CardsContainer}>
           <div className={styles.Card}>
-            <div className={styles.CardImage}></div>
+            <div className={styles.CardImage}>
+              <Image alt={"Image"} src={Left} className={styles.CardImage} />
+            </div>
             <div className={styles.CardTitle}>POLLU</div>
             <div className={styles.CardContext}>
               POLLUTION MONITORING SOLUTION
             </div>
           </div>
           <div className={styles.CardMain}>
-            <div className={styles.CardImage}></div>
+            <div className={styles.CardImage}>
+              <Image alt={"Image"} src={Middle} className={styles.CardImage} />
+            </div>
             <div className={styles.CardTitle}>POLLU</div>
             <div className={styles.CardContext}>
               POLLUTION MONITORING SOLUTION
             </div>
           </div>
           <div className={styles.Card}>
-            <div className={styles.CardImage}></div>
+            <div className={styles.CardImage}>
+              <Image alt={"Image"} src={Right} className={styles.CardImage} />
+            </div>
             <div className={styles.CardTitle}>POLLU</div>
             <div className={styles.CardContext}>
               POLLUTION MONITORING SOLUTION
             </div>
           </div>
         </div>
-        <div className={global.TextUnderline}>VIEW ALL CASE STUDIES</div>
+        <div className={global.TextUnderline} style={{ marginTop: "50px" }}>
+          <Arrow fill={"#000000"} />
+          VIEW ALL CASE STUDIES
+        </div>
       </div>
       <div className={global.Side}>
         <Circles

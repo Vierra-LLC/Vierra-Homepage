@@ -85,9 +85,12 @@
 
 .LeftList > * {
   text-align: left;
-  width: 200px;
+  width: 220px;
   font-size: 13px;
   overflow: visible;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .LeftButtons {
@@ -128,6 +131,9 @@
   text-decoration: underline;
   text-underline-offset: 2px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .RightSide {
@@ -312,6 +318,28 @@
   }
 }
 
+@media (max-width: 620px) {
+  .PicturesContainer {
+    margin-right: 0px;
+    margin-top: -40px;
+  }
+
+  .RightSide {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: clamp(1px, 100%, 750px);
+  }
+  .UserFlowContainer,
+  .AnalysisContainer {
+    margin-top: 0px;
+  }
+  .UserFlowContainer {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 550px) {
   .NavbarButton {
     font-size: clamp(12px, 2.5vw, 14px);
@@ -326,5 +354,10 @@
     gap: 8px;
     flex-wrap: wrap;
     width: clamp(1px, 100%, 500px);
+  }
+
+  .PicturesContainer > * {
+    width: clamp(40px, 12vw, 55px);
+    height: clamp(40px, 12vw, 55px);
   }
 }

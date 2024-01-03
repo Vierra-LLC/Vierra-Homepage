@@ -12,6 +12,7 @@ import WomanTwo from "./addons/experience/WomanTwo.png";
 import Woman from "./addons/experience/Woman.png";
 import Clock from "./addons/experience/ClockImage.png";
 import { useElementSize } from "@mantine/hooks";
+import { Arrow, Checkmark, PicturesDropbar } from "./addons/Misc";
 
 function Experience({ width: wd }) {
   const { ref, width } = useElementSize();
@@ -56,18 +57,44 @@ function Experience({ width: wd }) {
             <div className={styles.LeftTitle}>Startups</div>
             <div className={styles.LeftList}>
               <div className={styles.FirstChild}>
+                <Checkmark />
                 Scalability and flexibility
               </div>
-              <div>Easy and intuitive user interface</div>
-              <div>Data security</div>
-              <div>Reporting functionalities</div>
-              <div>Track performance</div>
-              <div>Data-driven decisions</div>
-              <div>Real-time analytics</div>
-              <div className={styles.LastChild}>Integration</div>
+              <div>
+                <Checkmark />
+                Easy and intuitive user interface
+              </div>
+              <div>
+                <Checkmark />
+                Data security
+              </div>
+              <div>
+                <Checkmark />
+                Reporting functionalities
+              </div>
+              <div>
+                <Checkmark />
+                Track performance
+              </div>
+              <div>
+                <Checkmark />
+                Data-driven decisions
+              </div>
+              <div>
+                <Checkmark />
+                Real-time analytics
+              </div>
+              <div className={styles.LastChild}>
+                {" "}
+                <Checkmark />
+                Integration
+              </div>
             </div>
             <div className={styles.LeftButtons}>
-              <div className={styles.Case}>VIEW CASE STUDIES</div>
+              <div className={styles.Case}>
+                <Arrow />
+                VIEW CASE STUDIES
+              </div>
               <div className={styles.Demo}>
                 <div className={styles.DemoCircle}></div>TRY DEMO
               </div>
@@ -88,7 +115,7 @@ function Experience({ width: wd }) {
               <div className={styles.ButtonManagement}>Task Management</div>
               <div className={styles.ButtonReport}>Generate Report</div>
               <div className={styles.ButtonMeeting}>Schedule Meeting</div>
-            </div>
+            </div>{" "}
             <div className={styles.PicturesContainer}>
               <div className={styles.Picture}>
                 <Image src={ManOne} alt={"Img"} className={styles.PicturePic} />
@@ -103,12 +130,14 @@ function Experience({ width: wd }) {
                   className={styles.PicturePic}
                 />
               </div>
+
               <div className={styles.Picture}>
                 <Image
                   src={ManFour}
                   alt={"Img"}
                   className={styles.PicturePic}
                 />
+                <PicturesDropbar top={"250px"} />
               </div>
               <div className={styles.Picture}>
                 <Image

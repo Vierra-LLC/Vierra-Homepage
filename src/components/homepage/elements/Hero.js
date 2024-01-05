@@ -3,28 +3,43 @@ import global from "./css/Global.module.css";
 import Circles from "./utils/Circles";
 import Navbar from "./utils/Navbar";
 import Image from "next/image";
+import Cmr from "./addons/hero/Crm.png";
+import Accounting from "./addons/hero/Accounting.png";
+import Marketing from "./addons/hero/Marketing.png";
+import Outreach from "./addons/hero/Outreach.png";
+import Sales from "./addons/hero/Sales.png";
 
 function Hero({ width }) {
   const list = [
     {
       name: "CRM",
-      image: "test",
+      image: Cmr,
+      height: 135,
+      width: 208,
     },
     {
       name: "Sales",
-      image: "test",
+      image: Sales,
+      height: 165,
+      width: 208,
     },
     {
       name: "Marketing",
-      image: "test",
+      image: Marketing,
+      height: 165,
+      width: 208,
     },
     {
       name: "Accounting",
-      image: "test",
+      image: Accounting,
+      height: 135,
+      width: 208,
     },
     {
       name: "Outreach",
-      image: "test",
+      image: Outreach,
+      height: 135,
+      width: 208,
     },
   ];
   const logos = [
@@ -87,7 +102,13 @@ function Hero({ width }) {
                 <div className={styles.Dot}></div>
               </div>
               <div className={styles.SchemaTitle}>{container.name}</div>
-              <div className={styles.SchemaPicture}>{container.image}</div>
+              <Image
+                src={container.image}
+                alt={"HeroPic"}
+                className={styles.SchemaPicture}
+                height={container.height}
+                width={container.width}
+              />
             </div>
           ))}
         </div>

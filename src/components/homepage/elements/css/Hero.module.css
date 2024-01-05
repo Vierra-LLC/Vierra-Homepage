@@ -90,11 +90,10 @@
 }
 
 .SchemaPicture {
-  border: 1px solid white;
   border-radius: 4px;
   flex-grow: 1;
+  margin-top: -10px;
   /* height: calc(100% - 120px); */
-  height: 50%;
 }
 
 @media (max-width: 700px) {

@@ -70,7 +70,8 @@ function Testimonials({ width }) {
         <div className={styles.Text}>
           <div className={global.HighLightRed}>features</div>
           <div className={styles.MainTitle}>
-            <div className={styles.MainTitleBlack}>Our Client</div>
+            <div>{width > 570 ? "Our Client" : ""}</div>
+
             <div className={styles.MainTitlePic}>
               <div className={styles.Pic}>
                 <Image alt={"Pic"} src={Pictureone} className={styles.Pic} />
@@ -85,13 +86,14 @@ function Testimonials({ width }) {
                 <Image alt={"Pic"} src={Picturefour} className={styles.Pic} />
               </div>
             </div>
-            <div className={global.HighLightSemiPurple}>Testimonials</div>
+            <div className={global.HighLightSemiPurple}>
+              {" "}
+              <div>{width > 570 ? "Testimonials" : "Our Client"}</div>
+            </div>
           </div>
-          <div className={global.Context}>
-            Our clients have praised our solution tools, describing them as
-            incredibly useful and user-friendly. They appreciate the efficiency
-            and accuracy they bring to their work, and the ability to save them
-            time and effort.
+          <div className={global.Context} style={{ textAlign: "center" }}>
+            Our solution tools have received high praise from our clients for
+            being highly useful and easy to use.
           </div>
         </div>
         <div className={styles.Slider}>

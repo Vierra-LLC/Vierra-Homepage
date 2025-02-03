@@ -1,29 +1,28 @@
 {
-  "name": "vierra-frontend",
-  "version": "0.1.0",
+  "name": "vite-project",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@mantine/core": "^7.3.2",
-    "@mantine/hooks": "^7.3.2",
-    "framer-motion": "^10.16.16",
-    "next": "14.0.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-player": "^2.14.1",
-    "sharp": "^0.33.1",
-    "swiper": "^11.0.5",
-    "zustand": "^4.4.7",
-    "react-scroll-parallax": "^3.4.5",
-    "scroll-snap": "^4.0.3"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "vite": "^6.0.5"
   }
 }

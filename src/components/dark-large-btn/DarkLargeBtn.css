@@ -1,0 +1,14 @@
+.dark-large-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 56px;
+    border-radius: 70px ;
+    border: 2px solid #7A13D0;
+    background: #18042A;
+    color: #FFFFFF;
+    font-size: 14px;   
+    font-weight: 400;
+    font-family: "Inter", serif;
+}

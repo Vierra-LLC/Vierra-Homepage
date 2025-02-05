@@ -10,11 +10,11 @@ function App() {
       {/* <DarkLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
       <LightLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} /> */}
       <EfficiencyCard 
-      stat="150%"
-      description="Average of increase in profit for our partners" 
-      type="purple" 
-      w={350}
-      h={230}
+      stat="120+"
+      description="Social media marketing campaigns created and launched by Vierra. " 
+      type="dark" 
+      w={410}
+      h={340}
       />
     </>
   )

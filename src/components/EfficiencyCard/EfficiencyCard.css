@@ -13,8 +13,12 @@
 }
 
 .dark-e-card {
-    background-color: #333;
+    background-color: #010205;
     color: white;
+    display: grid;
+    align-items:baseline;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% ;
 }
 
 .stat-e-card {
@@ -25,6 +29,23 @@
 
 .desc-e-card {
     font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    word-wrap: break-word;
+    margin-right: 5rem;
+    width: 100%;
+    max-width: max-content;
+    text-align: left;
+}
+
+.stat-e-card-dark {
+    font-size: 86px;
+    margin: 0;
+    width: max-content;
+}
+
+.desc-e-card-dark {
+    font-size: 18px;
     font-weight: 300;
     margin-top: 10px;
     word-wrap: break-word;

@@ -1,11 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import DarkLargeBtn from './components/darkLargeBtn/DarkLargeBtn'
-import LightLargeBtn from './components/lightLargeBtn/LightLargeBtn'
 import NavBar from './components/navBar/NavBar'
 import HeroOne from './components/heroOne/HeroOne'
+import EfficiencyCard from './components/efficiencyCard/EfficiencyCard'
 function App() {
   return (
     <>
@@ -13,6 +9,13 @@ function App() {
       <HeroOne />
       {/* <DarkLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
       <LightLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} /> */}
+      <EfficiencyCard 
+      stat="150%"
+      description="Average of increase in profit for our partners" 
+      type="purple" 
+      w={350}
+      h={230}
+      />
     </>
   )
 }

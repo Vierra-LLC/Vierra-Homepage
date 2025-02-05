@@ -18,15 +18,13 @@
 h1 {
     color: #ffffff;
     font-size: 5rem;
-    background-color: transparent;
     width: 70%;
     margin-left:2rem;
 }
 p {
-    color: #ffffff;
-    background-color: transparent;
-    width: 80%;
-    margin-left:2rem;
+    color: #9BAFC3;
+    
+    
 }
 a {
     color: #ffffff;

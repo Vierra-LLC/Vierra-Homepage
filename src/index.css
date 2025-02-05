@@ -31,6 +31,11 @@
     "wdth" 100;
 }
 
-*{
+* {
+  font-family: "Bricolage Grotesque", serif;
+}
+
+
+body {
   background: #18042A;
 }

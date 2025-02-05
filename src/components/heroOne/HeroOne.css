@@ -1,0 +1,51 @@
+.ellipse-one {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.ellipse-two {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 5rem;
+    background-color: transparent;
+    width: 70%;
+    margin-left:2rem;
+}
+p {
+    color: #ffffff;
+    background-color: transparent;
+    width: 80%;
+    margin-left:2rem;
+}
+a {
+    color: #ffffff;
+}
+
+.phones-image {
+    margin-right:2rem;
+}
+
+.hero-one-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: .3fr .3fr;
+    justify-content: start;
+    align-items: center;
+    margin-left: 2rem;
+    
+}

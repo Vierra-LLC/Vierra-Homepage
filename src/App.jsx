@@ -5,13 +5,14 @@ import './App.css'
 import DarkLargeBtn from './components/darkLargeBtn/DarkLargeBtn'
 import LightLargeBtn from './components/lightLargeBtn/LightLargeBtn'
 import NavBar from './components/navBar/NavBar'
-
+import HeroOne from './components/heroOne/HeroOne'
 function App() {
   return (
     <>
       <NavBar />
-      <DarkLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
-      <LightLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
+      <HeroOne />
+      {/* <DarkLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
+      <LightLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} /> */}
     </>
   )
 }

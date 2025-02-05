@@ -1,7 +1,8 @@
 import './App.css'
 import NavBar from './components/navBar/NavBar'
 import HeroOne from './components/heroOne/HeroOne'
-import EfficiencyCard from './components/efficiencyCard/EfficiencyCard'
+import EfficiencyCard from './components/EfficiencyCard/EfficiencyCard'
+import GraphCard from './components/GraphCard/GraphCard'
 function App() {
   return (
     <>
@@ -9,13 +10,7 @@ function App() {
       <HeroOne />
       {/* <DarkLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} />
       <LightLargeBtn text="Book a meeting" onClick={() => alert('Hello, world!')} /> */}
-      <EfficiencyCard 
-      stat="120+"
-      description="Social media marketing campaigns created and launched by Vierra. " 
-      type="dark" 
-      w={410}
-      h={340}
-      />
+      <GraphCard title="Business Growth" w={687} h={283} />
     </>
   )
 }

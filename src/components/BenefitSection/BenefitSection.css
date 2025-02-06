@@ -32,5 +32,18 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     width: 500px;
+}
 
+.growth-stats-container{
+    width: 1070px;
+    height: 640px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.stat-rect{
+    position: absolute;
+    top: -40px;
+    left: 175px;
 }

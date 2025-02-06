@@ -1,4 +1,5 @@
 .EfficiencyCard {
+    position: absolute;
     border-radius: 60px;
     padding: 50px;
     margin: 10px;

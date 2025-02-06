@@ -1,9 +1,11 @@
 import './EfficiencyCard.css';
 
-export default function EfficiencyCard({ stat, description, type, w, h}) {
+export default function EfficiencyCard({ stat, description, type, w, h, x, y }) {
     const cardStyle = {
         width: `${w-50}px`,
-        height: `${h-55}px`
+        height: `${h-55}px`,
+        top: `${y}px`,
+        left: `${x}px`
     };
     const cardClass = `EfficiencyCard ${type==='purple' ? `purple-e-card` : 'dark-e-card'}`;
     if(type === 'dark') {

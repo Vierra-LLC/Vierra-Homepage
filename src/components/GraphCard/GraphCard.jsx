@@ -2,10 +2,12 @@ import './GraphCard.css';
 import Ellipse from '../../assets/ellipse.svg';
 import Path1 from '../../assets/Path.svg';
 import Path2 from '../../assets/Path-1.svg';
-export default function GraphCard({ title, w, h}) {
+export default function GraphCard({ title, w, h, x, y}) {
     const cardStyle = {
         width: `${w-50}px`,
-        height: `${h-55}px`
+        height: `${h-55}px`,
+        top: `${y}px`,
+        left: `${x}px`
     };
     return(
         <div className="graph-card" style={cardStyle}>

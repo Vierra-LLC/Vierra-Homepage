@@ -6,13 +6,15 @@
     margin-bottom: 100px;
     width: 1000px;
     height: 580px;
-
+    z-index: 2;
+    /* overflow: hidden; */
 }
 
 .benefits{
     display: flex;
     flex-direction: column;
     width: 488px;
+    z-index: inherit;
 }
 
 
@@ -20,6 +22,9 @@
     width: 380px;
     height: 580px;
     border-radius: 60px;
+    box-shadow: 20px 20px 130px 2px #701CC04D;
+    z-index: inherit;
+
 }
 
 .benefit-title{
@@ -35,7 +40,7 @@
     text-align: left;
     margin-left: 0;
     margin-bottom: 0;
-
+    z-index: 2;
 }
 
 .benefit-learn-more{
@@ -61,8 +66,12 @@
     width: 573.84px;
     height: 466.81px;
     gap: 0px;
-    opacity: 0.8px;
+    /* opacity: 0.8; */
     opacity: 0.8;
-    bottom: -20;
-    right: -10;
+    bottom: -10%;
+    right: -5%;
+    z-index: 0;
+    transform: rotate(-95deg);
+    /* backdrop-filter: blur(50px) */
+
 }

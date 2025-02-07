@@ -19,12 +19,9 @@ h1 {
     color: #ffffff;
     font-size: 5rem;
     width: 70%;
-    margin-left:2rem;
 }
 p {
-    color: #9BAFC3;
-    
-    
+    width: 60%;   
 }
 a {
     color: #ffffff;
@@ -34,16 +31,23 @@ a {
     margin-right:2rem;
 }
 
-.hero-one-content {
+.main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left:2rem;
 }
-.grid {
+.booking-grid {
     display: grid;
     grid-template-columns: .3fr .3fr;
     justify-content: start;
     align-items: center;
-    margin-left: 2rem;
+    margin-top:2rem;
     
+}
+.logos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
 }

@@ -1,0 +1,57 @@
+.EfficiencyCard {
+    position: absolute;
+    border-radius: 60px;
+    padding: 50px;
+    margin: 10px;
+}
+
+.purple-e-card {
+    background-color: #701CC0;
+    color: #ECF2FDCC;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70%;
+}
+
+.dark-e-card {
+    background-color: #010205;
+    color: white;
+    display: grid;
+    align-items:baseline;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% ;
+}
+
+.stat-e-card {
+    font-size: 80px;
+    margin: 0;
+    width: max-content;
+}
+
+.desc-e-card {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    word-wrap: break-word;
+    margin-right: 5rem;
+    width: 100%;
+    max-width: max-content;
+    text-align: left;
+}
+
+.stat-e-card-dark {
+    font-size: 86px;
+    margin: 0;
+    width: max-content;
+}
+
+.desc-e-card-dark {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    word-wrap: break-word;
+    margin-right: 5rem;
+    width: 100%;
+    max-width: max-content;
+    text-align: left;
+}

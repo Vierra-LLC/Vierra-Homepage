@@ -1,0 +1,49 @@
+.benefit-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #FCF7FF;
+    align-items: center;
+    justify-content: center;
+}
+
+.solution-banner{
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.solution-banner-title{
+    color: #18042A;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41.6px;
+    width: 470px;
+}
+
+.solution-banner-description{
+    color: #8A9197;
+    font-family: "Inter", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 500px;
+}
+
+.growth-stats-container{
+    width: 1070px;
+    height: 640px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.stat-rect{
+    position: absolute;
+    top: -40px;
+    left: 175px;
+}
